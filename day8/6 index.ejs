@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <title>Auction</title>
+</head>
+
+<body>
+    <!-- navigation panel -->
+    <nav>
+        <div class="nav-wrapper brown">
+            <a href="/" class="brand-logo left">Auction</a>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col s12">
+            <div class="card-panel teal">
+                <h4>Auction Details</h4>
+                <div class="row">
+                    <div class="col s12 m6">
+                        <p id="det_brand"><b>Car Brand</b> : </p>
+                        <p id="det_regNo"><b>Car Registration Number</b> : </p>
+                        <p id="det_carOwner"><b>Car Owner </b>: </p>
+                        <p id="det_aucEnd"><b>Auction Ends</b> : </p>
+                    </div>
+                    <div class="col s12 m6">
+                        <p id="det_highVal"><b>Highest Bid </b>: </p>
+                        <p id="det_highBidder"><b>Highest Bidder </b>: </p>
+                        <p id="det_auctionOwner"><b>Auction Owner </b>: </p>
+                        <p id="det_status"><b>Auction Status </b>: </p>
+                    </div>
+                </div>
+                <div class="row" id="progressPopulate" style="display:none;">
+                    <div class="progress">
+                        <div class="indeterminate brown"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12">
+            <div class="row">
+                <div class="col s12 m6 l3">
+                    <div class="card-panel grey lighten-3" id="div_bid">
+                        <h5>Bid Product</h5>
+                        <p>Bid the product here.</p>
+                        <div class="card-content row">
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="bid_publicAddr" name="bid_publicAddr" type="text">
+                                        <label for="bid_publicAddr">Public Address</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="bid_privateKey" name="bid_privateKey" type="password">
+                                        <label for="bid_privateKey">Private Key</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="bid_bidValue" name="bid_bidValue" type="text">
+                                        <label for="bid_bidValue">Bid Value</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12 center-align">
+                                        <a onclick="bidNow()" class="waves-effect waves-light btn brown">
+                                            <i class="material-icons left">bubble_chart</i>BID
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row" id="progressBid" style="display:none;">
+                                    <div class="progress">
+                                        <div class="indeterminate"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l3">
+                    <div class="card-panel grey lighten-3" id="div_details">
+                        <h5>Bid Details</h5>
+                        <p>Get bid details of each bidders here.</p>
+                        <div class="card-content row">
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="vw_publicAddr" name="vw_publicAddr" type="text">
+                                        <label for="vw_publicAddr">Public Address</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12 center-align">
+                                        <a onclick="bidView()" class="waves-effect waves-light btn brown">
+                                            <i class="material-icons left">insert_chart</i>View
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row" id="progressView" style="display:none;">
+                                    <div class="progress">
+                                        <div class="indeterminate"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l3">
+                    <div class="card-panel grey lighten-3" id="div_finish">
+                        <h5>Finish Auction</h5>
+                        <p>Owner can withdraw the highest bid value and change product ownership here.</p>
+                        <div class="card-content row">
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="finish_publicAddr" name="finish_publicAddr" type="text">
+                                        <label for="finish_publicAddr">Public Address</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="finish_privateKey" name="finish_privateKey" type="password">
+                                        <label for="finish_privateKey">private key</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12 center-align">
+                                        <a onclick="finishAuction()" class="waves-effect waves-light btn brown">
+                                            <i class="material-icons left">flag</i>Finish Auction
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row" id="progressFinish" style="display:none;">
+                                    <div class="progress">
+                                        <div class="indeterminate"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col s12 m6 l3">
+                    <div class="card-panel grey lighten-3" id="div_withdraw">
+                        <h5>Withdraw Bid</h5>
+                        <p>Bidders who lost the game can withdraw their bids here.</p>
+                        <div class="card-content row">
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="wtdw_publicAddr" name="wtdw_publicAddr" type="text">
+                                        <label for="wtdw_publicAddr">Public Address</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="wtdw_privateKey" name="wtdw_privateKey" type="password">
+                                        <label for="wtdw_privateKey">Private Key</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12 center-align">
+                                        <a onclick="bidWithdraw()" class="waves-effect waves-light btn brown">
+                                            <i class="material-icons left">local_atm</i>Withdraw
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row" id="progressWithdraw" style="display:none;">
+                                    <div class="progress">
+                                        <div class="indeterminate"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        function bidNow() {
+            document.getElementById("progressBid").style.display = "block";
+            $.post("/bidnow",
+                {
+                    bid_publicAddr: document.getElementById("bid_publicAddr").value,
+                    bid_privateKey: document.getElementById("bid_privateKey").value,
+                    bid_bidValue: document.getElementById("bid_bidValue").value
+                },
+                function (data, status) {
+                    console.log("Data: " + data + "\nStatus: " + status);
+                    if (status == "success") alert(data);
+                    else alert("Server Unreachable");
+                    document.getElementById("progressBid").style.display = "none";
+                    location.reload();
+                });
+        }
+
+        function bidView() {
+            document.getElementById("progressView").style.display = "block";
+            $.post("/view",
+                {
+                    vw_publicAddr: document.getElementById("vw_publicAddr").value
+                },
+                function (data, status) {
+                    console.log("Data: " + data + "\nStatus: " + status);
+                    if (status == "success") alert("Bidded with " + data + " Ether");
+                    else alert("Server Unreachable");
+                    document.getElementById("progressView").style.display = "none";
+                    location.reload();
+                });
+        }
+
+        function bidWithdraw() {
+            document.getElementById("progressWithdraw").style.display = "block";
+            $.post("/withdraw",
+                {
+                    wtdw_publicAddr: document.getElementById("wtdw_publicAddr").value,
+                    wtdw_privateKey: document.getElementById("wtdw_privateKey").value
+                },
+                function (data, status) {
+                    console.log("Data: " + data + "\nStatus: " + status);
+                    if (status == "success") alert(data);
+                    else alert("Server Unreachable");
+                    document.getElementById("progressWithdraw").style.display = "none";
+                    location.reload();
+                });
+        }
+
+        function finishAuction() {
+            document.getElementById("progressFinish").style.display = "block";
+            $.post("/getAmount",
+                {
+                    finish_publicAddr: document.getElementById("finish_publicAddr").value,
+                    finish_privateKey: document.getElementById("finish_privateKey").value
+                },
+                function (data, status) {
+                    console.log("Data: " + data + "\nStatus: " + status);
+                    if (status == "success") alert(data);
+                    else alert("Server Unreachable");
+                    document.getElementById("progressFinish").style.display = "none";
+                    location.reload();
+                });
+        }
+
+        function populate() {
+
+            document.getElementById("progressPopulate").style.display = "block";
+
+            document.getElementById("div_bid").style.pointerEvents = "none";
+            document.getElementById("div_bid").style.opacity = 0.5;
+
+            document.getElementById("div_details").style.pointerEvents = "none";
+            document.getElementById("div_details").style.opacity = 0.5;
+
+            document.getElementById("div_finish").style.pointerEvents = "none";
+            document.getElementById("div_finish").style.opacity = 0.5;
+
+            document.getElementById("div_withdraw").style.pointerEvents = "none";
+            document.getElementById("div_withdraw").style.opacity = 0.5;
+
+            $.get("/populate", function (data, status) {
+                if (status == 'success') {
+                    document.getElementById("det_brand").innerHTML = "<b>Car Brand</b> : " + data[0];
+                    document.getElementById("det_regNo").innerHTML = "<b>Car Registration Number</b> : " + data[1];
+                    document.getElementById("det_carOwner").innerHTML = "<b>Car Owner</b> : " + data[2];
+                    document.getElementById("det_aucEnd").innerHTML = "<b>Auction Ends</b> : " + data[3];
+                    document.getElementById("det_highVal").innerHTML = "<b>Highest Bid</b> : " + data[4] + " Ether";
+                    document.getElementById("det_highBidder").innerHTML = "<b>Highest Bidder</b> : " + data[5];
+                    document.getElementById("det_auctionOwner").innerHTML = "<b>Auction Owner</b> : " + data[6];
+                    document.getElementById("det_status").innerHTML = "<b>Auction Status</b> : " + data[7];
+
+                    document.getElementById("progressPopulate").style.display = "none";
+
+                    if (data[7] == "Live") {
+
+                        document.getElementById("div_bid").style.pointerEvents = "initial";
+                        document.getElementById("div_bid").style.opacity = 1;
+
+                        document.getElementById("div_details").style.pointerEvents = "initial";
+                        document.getElementById("div_details").style.opacity = 1;
+
+                        document.getElementById("div_finish").style.pointerEvents = "none";
+                        document.getElementById("div_finish").style.opacity = 0.5;
+
+                        document.getElementById("div_withdraw").style.pointerEvents = "none";
+                        document.getElementById("div_withdraw").style.opacity = 0.5;
+
+                    } else if (data[7] == "Completed") {
+
+                        document.getElementById("div_bid").style.pointerEvents = "none";
+                        document.getElementById("div_bid").style.opacity = 0.5;
+
+                        document.getElementById("div_details").style.pointerEvents = "initial";
+                        document.getElementById("div_details").style.opacity = 1;
+
+                        document.getElementById("div_finish").style.pointerEvents = "initial";
+                        document.getElementById("div_finish").style.opacity = 1;
+
+                        document.getElementById("div_withdraw").style.pointerEvents = "initial";
+                        document.getElementById("div_withdraw").style.opacity = 1;
+
+                    }
+                }
+            });
+        }
+
+
+        populate();
+
+    </script>
+
+</body>
+
+</html>

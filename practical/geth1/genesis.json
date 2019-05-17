@@ -1,0 +1,8 @@
+{
+"difficulty":"0x40",
+"alloc":{"31e03392b04d0f0de159c218562f2c8fe0b05a51":{"balance":"0x56bc75e2d63100000"}},
+"gasLimit":"0xfffffffffffff",
+"config":{
+"chainId":4002
+}
+}

@@ -1,0 +1,29 @@
+=============== Apr 7, 2019 (IST) ===============
+20:52:38.128676 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:52:38.192480 db@open opening
+20:52:38.218101 version@stat F·[] S·0B[] Sc·[]
+20:52:38.259513 db@janitor F·2 G·0
+20:52:38.259649 db@open done T·67.068046ms
+=============== Apr 8, 2019 (IST) ===============
+01:50:30.201887 db@close closing
+01:50:30.224682 db@close done T·22.791398ms
+=============== Apr 8, 2019 (IST) ===============
+09:14:35.255847 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+09:14:35.304403 version@stat F·[] S·0B[] Sc·[]
+09:14:35.304432 db@open opening
+09:14:35.304517 journal@recovery F·1
+09:14:35.330612 journal@recovery recovering @1
+09:14:35.456274 memdb@flush created L0@2 N·314 S·28KiB "\x00ے..\x83ߊ,v269":"\xfd\x13\x14..wU%,v309"
+09:14:35.489143 version@stat F·[1] S·28KiB[28KiB] Sc·[0.25]
+09:14:35.663308 db@janitor F·3 G·0
+09:14:35.663400 db@open done T·358.942203ms
+=============== Apr 8, 2019 (IST) ===============
+09:15:48.249157 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+09:15:48.249373 version@stat F·[1] S·28KiB[28KiB] Sc·[0.25]
+09:15:48.249388 db@open opening
+09:15:48.249445 journal@recovery F·1
+09:15:48.253485 journal@recovery recovering @3
+09:15:48.311296 memdb@flush created L0@5 N·3 S·448B "Dat..ion,v317":"eth..\x17\xa2\xa6,v316"
+09:15:48.343112 version@stat F·[2] S·28KiB[28KiB] Sc·[0.50]
+09:15:48.445531 db@janitor F·4 G·0
+09:15:48.445647 db@open done T·196.232218ms
