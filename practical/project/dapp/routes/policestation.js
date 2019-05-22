@@ -13,7 +13,7 @@ router.get("/add",function(req,res){
 
 //this function will add a new account with given password adn enter an entity in policestation Contract
 router.post("/add",function(req,res){
-    console.log(req.body);
+    //console.log(req.body);
     if(req.body.stationPassword!=""&& req.body.stationName!=""){
         web3.eth.personal.newAccount(req.body.stationPassword).then((data)=>{
             console.log(data);

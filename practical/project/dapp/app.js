@@ -14,7 +14,11 @@ web3 = new Web3("http://localhost:8545");
 contractAddress = MyContractJSON.networks[4002].address;
 abi = MyContractJSON.abi;
 
-ownerAddr = 
+accounts =web3.eth.getAccounts().then(accounts=>{
+  ownerAddr = accounts[0];
+  //console.log(ownerAddr);
+});
+
 
 CaseReg = new web3.eth.Contract(abi,contractAddress);
 
