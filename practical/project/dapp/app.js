@@ -16,7 +16,7 @@ abi = MyContractJSON.abi;
 
 accounts =web3.eth.getAccounts().then(accounts=>{
   ownerAddr = accounts[0];
-  //console.log(ownerAddr);
+  console.log(ownerAddr);
 });
 
 

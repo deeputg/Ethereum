@@ -18,9 +18,11 @@ router.get('/login',function(req,res){
 // admin login post method
 router.post('/login',function(req,res){
   //console.log(req.body.adminPassword);
-  web3.eth.personal.unlockAccount(ownerAddr,req.body.adminPassword,600).then((err,result)=>{
-   console.log(err);
+  web3.eth.personal.unlockAccount(ownerAddr,req.body.adminPassword,600).then((result)=>{
+   //console.log(err);
     console.log("ssssssssssssssss"+result);
+  }).catch((secondResult)=>{
+    console.log("noooooooooooooooooooo"+secondResult);
   })
   //res.redirect("/");
 })
