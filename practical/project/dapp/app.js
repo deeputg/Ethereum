@@ -3,9 +3,16 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var expressSession = require('express-session')
+
+var sess = {
+    secret: 'blockchain-kurumb',
+    cookie: {}
+}
 
 var indexRouter = require('./routes/index');
-//var usersRouter = require('./routes/users');
+var loginRouter = require('./routes/login');
+var logoutRouter = require('./routes/logout');
 var policeStationRouter = require("./routes/policestation")
 
 Web3 = require('web3')
@@ -14,8 +21,9 @@ web3 = new Web3("http://localhost:8545");
 contractAddress = MyContractJSON.networks[4002].address;
 abi = MyContractJSON.abi;
 
-accounts =web3.eth.getAccounts().then(accounts=>{
+web3.eth.getAccounts().then(accounts=>{
   ownerAddr = accounts[0];
+  accList=accounts;
   console.log(ownerAddr);
 });
 
@@ -33,10 +41,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(expressSession(sess));
 
 app.use('/', indexRouter);
-//app.use('/users', usersRouter);
+app.use('/login', loginRouter);
 app.use("/policestation",policeStationRouter);
+app.use('/logout',logoutRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

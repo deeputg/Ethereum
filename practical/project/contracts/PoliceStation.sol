@@ -10,11 +10,12 @@ contract PoliceStation{
     }
    
     mapping (address=>stationDetails) station;
+    uint stationNo=1;
     
     
-    
-    function setPoliceStation(address _address,uint _stationNo,string memory _stationName)public{
-        station[_address] = stationDetails(_stationNo,_stationName,_address);
+    function setPoliceStation(address _address,string memory _stationName)public{
+        station[_address] = stationDetails(stationNo,_stationName,_address);
+        stationNo++;
     }
     
     function getStationDetails(address _address) public view returns(address,uint,string memory){

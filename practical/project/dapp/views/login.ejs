@@ -17,8 +17,15 @@
 
     <div class="admin-login" style="border: solid;padding: 20px;float: right;">
             <h3>Police station Login</h3>
-        <form action="/policestation/login" method="post">
-            <p>Station No : <input type="text" name="stationNo"> </p>
+            <%=accounts[0]%>
+            <% for(i=0;i<accounts.length;i++){%>
+                
+                <p><%=accounts[i]%></p>
+                <%
+                
+            }%>
+        <form action="/login/policestation" method="post">
+            <p>Station Account: <input type="text" name="stationAddr"> </p>
                 <p>Password : <input type="password" name="stationPassword"></p>
                     <p> <button type="submit">Login</button></p> 
         </form>
