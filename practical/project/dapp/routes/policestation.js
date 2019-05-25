@@ -1,4 +1,5 @@
 var express = require('express');
+const util = require('util')
 var router = express.Router();
 
 /* GET users listing. */
@@ -16,15 +17,16 @@ router.post("/add",function(req,res){
     //console.log(req.body);
     if(req.body.stationPassword!=""&& req.body.stationName!=""){
         web3.eth.personal.newAccount(req.body.stationPassword).then((data)=>{
-            console.log(data);
-            CaseReg.methods.setPoliceStation(data,req.body.stationName).send().then((stationDetails)=>{
+            
+            CaseReg.methods.setPoliceStation(data.toLowerCase(),req.body.stationName).send({from:ownerAddr,gas:6000000}).then((stationDetails)=>{
                 console.log(stationDetails)
                 res.send(stationDetails);
             }).catch((err)=>{
                 console.log("error calling setPoliceStation Method : "+err);
+                console.log(util.inspect(err, false, null, true /* enable colors */))
             })
         }).catch(err2=>{
-            console.log("error calling newAccount : "+err1);
+            console.log("error calling newAccount : "+err2);
         })
     }
 })

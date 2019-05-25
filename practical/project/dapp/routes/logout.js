@@ -11,6 +11,7 @@ router.use(expressSession(sess));
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  console.log("session distroid")
     req.session.destroy();
      res.redirect('/login');
 });

@@ -11,10 +11,6 @@
         {
           "name": "_stationName",
           "type": "string"
-        },
-        {
-          "name": "_stationName",
-          "type": "string"
         }
       ],
       "name": "setPoliceStation",
@@ -51,11 +47,11 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.0+commit.1d4f565a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"_address\",\"type\":\"address\"},{\"name\":\"_stationName\",\"type\":\"string\"}],\"name\":\"setPoliceStation\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"getStationDetails\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"},{\"name\":\"\",\"type\":\"uint256\"},{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/deepu/Deepu/CED program/practical/project/contracts/PoliceStation.sol\":\"PoliceStation\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/deepu/Deepu/CED program/practical/project/contracts/PoliceStation.sol\":{\"keccak256\":\"0x67d6d6caa1ce24197d5b98c5d28a2ed1f8eecaf93fdb70f9bafeb19ad251255f\",\"urls\":[\"bzzr://ba3d97ac46396a40291a6e062d74acbdb5d3c36096d9a86bb795118ff928aeeb\"]}},\"version\":1}",
-  "bytecode": "0x60806040526001805534801561001457600080fd5b506105ba806100246000396000f3fe60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063189f987b14610051578063ab03f2d514610139575b600080fd5b34801561005d57600080fd5b506101376004803603604081101561007457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001906401000000008111156100b157600080fd5b8201836020820111156100c357600080fd5b803590602001918460018302840111640100000000831117156100e557600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f82011690508083019250505050505050919291929050505061023d565b005b34801561014557600080fd5b506101886004803603602081101561015c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610336565b604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200183815260200180602001828103825283818151815260200191508051906020019080838360005b838110156102005780820151818401526020810190506101e5565b50505050905090810190601f16801561022d5780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b60606040519081016040528060015481526020018281526020018373ffffffffffffffffffffffffffffffffffffffff168152506000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000820151816000015560208201518160010190805190602001906102d59291906104b1565b5060408201518160020160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055509050506001600081548092919060010191905055505050565b6000806060610343610531565b6000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206060604051908101604052908160008201548152602001600182018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104305780601f1061040557610100808354040283529160200191610430565b820191906000526020600020905b81548152906001019060200180831161041357829003601f168201915b505050505081526020016002820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815250509050806040015181600001518260200151809050935093509350509193909250565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106104f257805160ff1916838001178555610520565b82800160010185558215610520579182015b8281111561051f578251825591602001919060010190610504565b5b50905061052d9190610569565b5090565b6060604051908101604052806000815260200160608152602001600073ffffffffffffffffffffffffffffffffffffffff1681525090565b61058b91905b8082111561058757600081600090555060010161056f565b5090565b9056fea165627a7a72305820388a3f95eabda4240686a74115411bdb55701571ff3419041c14a9640143dc840029",
-  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063189f987b14610051578063ab03f2d514610139575b600080fd5b34801561005d57600080fd5b506101376004803603604081101561007457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001906401000000008111156100b157600080fd5b8201836020820111156100c357600080fd5b803590602001918460018302840111640100000000831117156100e557600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f82011690508083019250505050505050919291929050505061023d565b005b34801561014557600080fd5b506101886004803603602081101561015c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610336565b604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200183815260200180602001828103825283818151815260200191508051906020019080838360005b838110156102005780820151818401526020810190506101e5565b50505050905090810190601f16801561022d5780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b60606040519081016040528060015481526020018281526020018373ffffffffffffffffffffffffffffffffffffffff168152506000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000820151816000015560208201518160010190805190602001906102d59291906104b1565b5060408201518160020160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055509050506001600081548092919060010191905055505050565b6000806060610343610531565b6000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206060604051908101604052908160008201548152602001600182018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104305780601f1061040557610100808354040283529160200191610430565b820191906000526020600020905b81548152906001019060200180831161041357829003601f168201915b505050505081526020016002820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815250509050806040015181600001518260200151809050935093509350509193909250565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106104f257805160ff1916838001178555610520565b82800160010185558215610520579182015b8281111561051f578251825591602001919060010190610504565b5b50905061052d9190610569565b5090565b6060604051908101604052806000815260200160608152602001600073ffffffffffffffffffffffffffffffffffffffff1681525090565b61058b91905b8082111561058757600081600090555060010161056f565b5090565b9056fea165627a7a72305820388a3f95eabda4240686a74115411bdb55701571ff3419041c14a9640143dc840029",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.1+commit.c8a2cb62\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"_address\",\"type\":\"address\"},{\"name\":\"_stationName\",\"type\":\"string\"}],\"name\":\"setPoliceStation\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"getStationDetails\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"},{\"name\":\"\",\"type\":\"uint256\"},{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/deepu/Deepu/CED program/practical/project/contracts/PoliceStation.sol\":\"PoliceStation\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/deepu/Deepu/CED program/practical/project/contracts/PoliceStation.sol\":{\"keccak256\":\"0x67d6d6caa1ce24197d5b98c5d28a2ed1f8eecaf93fdb70f9bafeb19ad251255f\",\"urls\":[\"bzzr://ba3d97ac46396a40291a6e062d74acbdb5d3c36096d9a86bb795118ff928aeeb\"]}},\"version\":1}",
+  "bytecode": "0x60806040526001805534801561001457600080fd5b506105b4806100246000396000f3fe608060405260043610610046576000357c010000000000000000000000000000000000000000000000000000000090048063189f987b1461004b578063ab03f2d514610133575b600080fd5b34801561005757600080fd5b506101316004803603604081101561006e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001906401000000008111156100ab57600080fd5b8201836020820111156100bd57600080fd5b803590602001918460018302840111640100000000831117156100df57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610237565b005b34801561013f57600080fd5b506101826004803603602081101561015657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610330565b604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200183815260200180602001828103825283818151815260200191508051906020019080838360005b838110156101fa5780820151818401526020810190506101df565b50505050905090810190601f1680156102275780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b60606040519081016040528060015481526020018281526020018373ffffffffffffffffffffffffffffffffffffffff168152506000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000820151816000015560208201518160010190805190602001906102cf9291906104ab565b5060408201518160020160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055509050506001600081548092919060010191905055505050565b600080606061033d61052b565b6000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206060604051908101604052908160008201548152602001600182018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561042a5780601f106103ff5761010080835404028352916020019161042a565b820191906000526020600020905b81548152906001019060200180831161040d57829003601f168201915b505050505081526020016002820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815250509050806040015181600001518260200151809050935093509350509193909250565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106104ec57805160ff191683800117855561051a565b8280016001018555821561051a579182015b828111156105195782518255916020019190600101906104fe565b5b5090506105279190610563565b5090565b6060604051908101604052806000815260200160608152602001600073ffffffffffffffffffffffffffffffffffffffff1681525090565b61058591905b80821115610581576000816000905550600101610569565b5090565b9056fea165627a7a723058208cd0a894e7f61bfa107a6944934140f9ee4e68b201034b8ee0dc34a1a2f3f9f60029",
+  "deployedBytecode": "0x608060405260043610610046576000357c010000000000000000000000000000000000000000000000000000000090048063189f987b1461004b578063ab03f2d514610133575b600080fd5b34801561005757600080fd5b506101316004803603604081101561006e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001906401000000008111156100ab57600080fd5b8201836020820111156100bd57600080fd5b803590602001918460018302840111640100000000831117156100df57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610237565b005b34801561013f57600080fd5b506101826004803603602081101561015657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610330565b604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200183815260200180602001828103825283818151815260200191508051906020019080838360005b838110156101fa5780820151818401526020810190506101df565b50505050905090810190601f1680156102275780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b60606040519081016040528060015481526020018281526020018373ffffffffffffffffffffffffffffffffffffffff168152506000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206000820151816000015560208201518160010190805190602001906102cf9291906104ab565b5060408201518160020160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055509050506001600081548092919060010191905055505050565b600080606061033d61052b565b6000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206060604051908101604052908160008201548152602001600182018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561042a5780601f106103ff5761010080835404028352916020019161042a565b820191906000526020600020905b81548152906001019060200180831161040d57829003601f168201915b505050505081526020016002820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815250509050806040015181600001518260200151809050935093509350509193909250565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106104ec57805160ff191683800117855561051a565b8280016001018555821561051a579182015b828111156105195782518255916020019190600101906104fe565b5b5090506105279190610563565b5090565b6060604051908101604052806000815260200160608152602001600073ffffffffffffffffffffffffffffffffffffffff1681525090565b61058591905b80821115610581576000816000905550600101610569565b5090565b9056fea165627a7a723058208cd0a894e7f61bfa107a6944934140f9ee4e68b201034b8ee0dc34a1a2f3f9f60029",
   "sourceMap": "61:653:2:-;;;280:1;265:16;;61:653;8:9:-1;5:2;;;30:1;27;20:12;5:2;61:653:2;;;;;;;",
-  "deployedSourceMap": "61:653:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;297:181;;8:9:-1;5:2;;;30:1;27;20:12;5:2;297:181:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;297:181:2;;;;;;;;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;297:181:2;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;297:181:2;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;297:181:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;297:181:2;;;;;;;;;;;;;;;;;;488:219;;8:9:-1;5:2;;;30:1;27;20:12;5:2;488:219:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;488:219:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;488:219:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;297:181;403:47;;;;;;;;;418:9;;403:47;;;;428:12;403:47;;;;441:8;403:47;;;;;383:7;:17;391:8;383:17;;;;;;;;;;;;;;;:67;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;460:9;;:11;;;;;;;;;;;;;297:181;;:::o;488:219::-;553:7;561:4;566:13;590:24;;:::i;:::-;617:7;:17;625:8;617:17;;;;;;;;;;;;;;;590:44;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;651:2;:20;;;672:2;:12;;;685:2;:14;;;644:56;;;;;;;;;;488:219;;;;;:::o;61:653::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "deployedSourceMap": "61:653:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;297:181;;8:9:-1;5:2;;;30:1;27;20:12;5:2;297:181:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;297:181:2;;;;;;;;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;297:181:2;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;297:181:2;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;297:181:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;297:181:2;;;;;;;;;;;;;;;:::i;:::-;;488:219;;8:9:-1;5:2;;;30:1;27;20:12;5:2;488:219:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;488:219:2;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;488:219:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;297:181;403:47;;;;;;;;;418:9;;403:47;;;;428:12;403:47;;;;441:8;403:47;;;;;383:7;:17;391:8;383:17;;;;;;;;;;;;;;;:67;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;460:9;;:11;;;;;;;;;;;;;297:181;;:::o;488:219::-;553:7;561:4;566:13;590:24;;:::i;:::-;617:7;:17;625:8;617:17;;;;;;;;;;;;;;;590:44;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;651:2;:20;;;672:2;:12;;;685:2;:14;;;644:56;;;;;;;;;;488:219;;;;;:::o;61:653::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
   "source": "pragma solidity ^0.5.0;\n//pragma experimental ABIEncoderV2;\n\ncontract PoliceStation{\n    \n    struct stationDetails{\n        uint stationNo;\n        string stationName;\n        address stationAccAddress;\n    }\n   \n    mapping (address=>stationDetails) station;\n    uint stationNo=1;\n    \n    \n    function setPoliceStation(address _address,string memory _stationName)public{\n        station[_address] = stationDetails(stationNo,_stationName,_address);\n        stationNo++;\n    }\n    \n    function getStationDetails(address _address) public view returns(address,uint,string memory){\n        stationDetails memory sd = station[_address];\n        return(sd.stationAccAddress,sd.stationNo,sd.stationName);\n    }\n    \n}",
   "sourcePath": "/home/deepu/Deepu/CED program/practical/project/contracts/PoliceStation.sol",
   "ast": {
@@ -230,261 +226,12 @@
             "visibility": "internal"
           },
           {
-            "body": {
-              "id": 206,
-              "nodeType": "Block",
-              "src": "372:85:2",
-              "statements": [
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 204,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "baseExpression": {
-                        "argumentTypes": null,
-                        "id": 196,
-                        "name": "station",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 187,
-                        "src": "382:7:2",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_stationDetails_$183_storage_$",
-                          "typeString": "mapping(address => struct PoliceStation.stationDetails storage ref)"
-                        }
-                      },
-                      "id": 198,
-                      "indexExpression": {
-                        "argumentTypes": null,
-                        "id": 197,
-                        "name": "_address",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 189,
-                        "src": "390:8:2",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_address",
-                          "typeString": "address"
-                        }
-                      },
-                      "isConstant": false,
-                      "isLValue": true,
-                      "isPure": false,
-                      "lValueRequested": true,
-                      "nodeType": "IndexAccess",
-                      "src": "382:17:2",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_stationDetails_$183_storage",
-                        "typeString": "struct PoliceStation.stationDetails storage ref"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "arguments": [
-                        {
-                          "argumentTypes": null,
-                          "id": 200,
-                          "name": "_stationNo",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 191,
-                          "src": "417:10:2",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          }
-                        },
-                        {
-                          "argumentTypes": null,
-                          "id": 201,
-                          "name": "_stationName",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 193,
-                          "src": "428:12:2",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_string_memory_ptr",
-                            "typeString": "string memory"
-                          }
-                        },
-                        {
-                          "argumentTypes": null,
-                          "id": 202,
-                          "name": "_address",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 189,
-                          "src": "441:8:2",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_address",
-                            "typeString": "address"
-                          }
-                        }
-                      ],
-                      "expression": {
-                        "argumentTypes": [
-                          {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          },
-                          {
-                            "typeIdentifier": "t_string_memory_ptr",
-                            "typeString": "string memory"
-                          },
-                          {
-                            "typeIdentifier": "t_address",
-                            "typeString": "address"
-                          }
-                        ],
-                        "id": 199,
-                        "name": "stationDetails",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 183,
-                        "src": "402:14:2",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_struct$_stationDetails_$183_storage_ptr_$",
-                          "typeString": "type(struct PoliceStation.stationDetails storage pointer)"
-                        }
-                      },
-                      "id": 203,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "kind": "structConstructorCall",
-                      "lValueRequested": false,
-                      "names": [],
-                      "nodeType": "FunctionCall",
-                      "src": "402:48:2",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_stationDetails_$183_memory",
-                        "typeString": "struct PoliceStation.stationDetails memory"
-                      }
-                    },
-                    "src": "382:68:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_stationDetails_$183_storage",
-                      "typeString": "struct PoliceStation.stationDetails storage ref"
-                    }
-                  },
-                  "id": 205,
-                  "nodeType": "ExpressionStatement",
-                  "src": "382:68:2"
-                }
-              ]
-            },
-            "documentation": null,
+            "constant": false,
             "id": 190,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
             "name": "stationNo",
             "nodeType": "VariableDeclaration",
-            "parameters": {
-              "id": 194,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 189,
-                  "name": "_address",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 207,
-                  "src": "306:16:2",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 188,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "306:7:2",
-                    "stateMutability": "nonpayable",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 191,
-                  "name": "_stationNo",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 207,
-                  "src": "323:15:2",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 190,
-                    "name": "uint",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "323:4:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 193,
-                  "name": "_stationName",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 207,
-                  "src": "339:26:2",
-                  "stateVariable": false,
-                  "storageLocation": "memory",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_string_memory_ptr",
-                    "typeString": "string"
-                  },
-                  "typeName": {
-                    "id": 192,
-                    "name": "string",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "339:6:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage_ptr",
-                      "typeString": "string"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "305:61:2"
-            },
-            "returnParameters": {
-              "id": 195,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "372:0:2"
-            },
             "scope": 238,
             "src": "265:16:2",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "internal",
-            "constant": false,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -518,7 +265,8 @@
                 "typeString": "int_const 1"
               },
               "value": "1"
-            }
+            },
+            "visibility": "internal"
           },
           {
             "body": {
@@ -527,82 +275,6 @@
               "src": "373:105:2",
               "statements": [
                 {
-                  "assignments": [
-                    219
-                  ],
-                  "declarations": [
-                    {
-                      "constant": false,
-                      "id": 219,
-                      "name": "sd",
-                      "nodeType": "VariableDeclaration",
-                      "scope": 232,
-                      "src": "569:24:2",
-                      "stateVariable": false,
-                      "storageLocation": "memory",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_stationDetails_$183_memory_ptr",
-                        "typeString": "struct PoliceStation.stationDetails"
-                      },
-                      "typeName": {
-                        "contractScope": null,
-                        "id": 218,
-                        "name": "stationDetails",
-                        "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 183,
-                        "src": "569:14:2",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_stationDetails_$183_storage_ptr",
-                          "typeString": "struct PoliceStation.stationDetails"
-                        }
-                      },
-                      "value": null,
-                      "visibility": "internal"
-                    }
-                  ],
-                  "id": 206,
-                  "initialValue": {
-                    "argumentTypes": null,
-                    "baseExpression": {
-                      "argumentTypes": null,
-                      "id": 220,
-                      "name": "station",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 187,
-                      "src": "596:7:2",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_address_$_t_struct$_stationDetails_$183_storage_$",
-                        "typeString": "mapping(address => struct PoliceStation.stationDetails storage ref)"
-                      }
-                    },
-                    "id": 222,
-                    "indexExpression": {
-                      "argumentTypes": null,
-                      "id": 221,
-                      "name": "_address",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 209,
-                      "src": "604:8:2",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "isConstant": false,
-                    "isLValue": true,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "nodeType": "IndexAccess",
-                    "src": "596:17:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_stationDetails_$183_storage",
-                      "typeString": "struct PoliceStation.stationDetails storage ref"
-                    }
-                  },
-                  "nodeType": "ExpressionStatement",
-                  "src": "383:67:2",
                   "expression": {
                     "argumentTypes": null,
                     "id": 205,
@@ -740,114 +412,23 @@
                       "typeIdentifier": "t_struct$_stationDetails_$183_storage",
                       "typeString": "struct PoliceStation.stationDetails storage ref"
                     }
-                  }
+                  },
+                  "id": 206,
+                  "nodeType": "ExpressionStatement",
+                  "src": "383:67:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "components": [
-                      {
-                        "argumentTypes": null,
-                        "expression": {
-                          "argumentTypes": null,
-                          "id": 224,
-                          "name": "sd",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 219,
-                          "src": "630:2:2",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_stationDetails_$183_memory_ptr",
-                            "typeString": "struct PoliceStation.stationDetails memory"
-                          }
-                        },
-                        "id": 225,
-                        "isConstant": false,
-                        "isLValue": true,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "memberName": "stationAccAddress",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": 182,
-                        "src": "630:20:2",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_address",
-                          "typeString": "address"
-                        }
-                      },
-                      {
-                        "argumentTypes": null,
-                        "expression": {
-                          "argumentTypes": null,
-                          "id": 226,
-                          "name": "sd",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 219,
-                          "src": "651:2:2",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_stationDetails_$183_memory_ptr",
-                            "typeString": "struct PoliceStation.stationDetails memory"
-                          }
-                        },
-                        "id": 227,
-                        "isConstant": false,
-                        "isLValue": true,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "memberName": "stationNo",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": 178,
-                        "src": "651:12:2",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      },
-                      {
-                        "argumentTypes": null,
-                        "expression": {
-                          "argumentTypes": null,
-                          "id": 228,
-                          "name": "sd",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 219,
-                          "src": "664:2:2",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_stationDetails_$183_memory_ptr",
-                            "typeString": "struct PoliceStation.stationDetails memory"
-                          }
-                        },
-                        "id": 229,
-                        "isConstant": false,
-                        "isLValue": true,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "memberName": "stationName",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": 180,
-                        "src": "664:14:2",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_string_memory",
-                          "typeString": "string memory"
-                        }
-                      }
-                    ],
                     "id": 208,
                     "isConstant": false,
-                    "isInlineArray": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "nodeType": "UnaryOperation",
-                    "src": "460:11:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    },
                     "operator": "++",
                     "prefix": false,
+                    "src": "460:11:2",
                     "subExpression": {
                       "argumentTypes": null,
                       "id": 207,
@@ -860,9 +441,12 @@
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 217,
                   "id": 209,
                   "nodeType": "ExpressionStatement",
                   "src": "460:11:2"
@@ -939,87 +523,7 @@
             "returnParameters": {
               "id": 196,
               "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 212,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 233,
-                  "src": "532:7:2",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 211,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "532:7:2",
-                    "stateMutability": "nonpayable",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 214,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 233,
-                  "src": "540:4:2",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 213,
-                    "name": "uint",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "540:4:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 216,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 233,
-                  "src": "545:13:2",
-                  "stateVariable": false,
-                  "storageLocation": "memory",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_string_memory_ptr",
-                    "typeString": "string"
-                  },
-                  "typeName": {
-                    "id": 215,
-                    "name": "string",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "545:6:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage_ptr",
-                      "typeString": "string"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
+              "parameters": [],
               "src": "373:0:2"
             },
             "scope": 238,
@@ -1536,261 +1040,12 @@
             "visibility": "internal"
           },
           {
-            "body": {
-              "id": 206,
-              "nodeType": "Block",
-              "src": "372:85:2",
-              "statements": [
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "id": 204,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftHandSide": {
-                      "argumentTypes": null,
-                      "baseExpression": {
-                        "argumentTypes": null,
-                        "id": 196,
-                        "name": "station",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 187,
-                        "src": "382:7:2",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_stationDetails_$183_storage_$",
-                          "typeString": "mapping(address => struct PoliceStation.stationDetails storage ref)"
-                        }
-                      },
-                      "id": 198,
-                      "indexExpression": {
-                        "argumentTypes": null,
-                        "id": 197,
-                        "name": "_address",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 189,
-                        "src": "390:8:2",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_address",
-                          "typeString": "address"
-                        }
-                      },
-                      "isConstant": false,
-                      "isLValue": true,
-                      "isPure": false,
-                      "lValueRequested": true,
-                      "nodeType": "IndexAccess",
-                      "src": "382:17:2",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_stationDetails_$183_storage",
-                        "typeString": "struct PoliceStation.stationDetails storage ref"
-                      }
-                    },
-                    "nodeType": "Assignment",
-                    "operator": "=",
-                    "rightHandSide": {
-                      "argumentTypes": null,
-                      "arguments": [
-                        {
-                          "argumentTypes": null,
-                          "id": 200,
-                          "name": "_stationNo",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 191,
-                          "src": "417:10:2",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          }
-                        },
-                        {
-                          "argumentTypes": null,
-                          "id": 201,
-                          "name": "_stationName",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 193,
-                          "src": "428:12:2",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_string_memory_ptr",
-                            "typeString": "string memory"
-                          }
-                        },
-                        {
-                          "argumentTypes": null,
-                          "id": 202,
-                          "name": "_address",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 189,
-                          "src": "441:8:2",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_address",
-                            "typeString": "address"
-                          }
-                        }
-                      ],
-                      "expression": {
-                        "argumentTypes": [
-                          {
-                            "typeIdentifier": "t_uint256",
-                            "typeString": "uint256"
-                          },
-                          {
-                            "typeIdentifier": "t_string_memory_ptr",
-                            "typeString": "string memory"
-                          },
-                          {
-                            "typeIdentifier": "t_address",
-                            "typeString": "address"
-                          }
-                        ],
-                        "id": 199,
-                        "name": "stationDetails",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 183,
-                        "src": "402:14:2",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_struct$_stationDetails_$183_storage_ptr_$",
-                          "typeString": "type(struct PoliceStation.stationDetails storage pointer)"
-                        }
-                      },
-                      "id": 203,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": false,
-                      "kind": "structConstructorCall",
-                      "lValueRequested": false,
-                      "names": [],
-                      "nodeType": "FunctionCall",
-                      "src": "402:48:2",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_stationDetails_$183_memory",
-                        "typeString": "struct PoliceStation.stationDetails memory"
-                      }
-                    },
-                    "src": "382:68:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_stationDetails_$183_storage",
-                      "typeString": "struct PoliceStation.stationDetails storage ref"
-                    }
-                  },
-                  "id": 205,
-                  "nodeType": "ExpressionStatement",
-                  "src": "382:68:2"
-                }
-              ]
-            },
-            "documentation": null,
+            "constant": false,
             "id": 190,
-            "implemented": true,
-            "kind": "function",
-            "modifiers": [],
             "name": "stationNo",
             "nodeType": "VariableDeclaration",
-            "parameters": {
-              "id": 194,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 189,
-                  "name": "_address",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 207,
-                  "src": "306:16:2",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 188,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "306:7:2",
-                    "stateMutability": "nonpayable",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 191,
-                  "name": "_stationNo",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 207,
-                  "src": "323:15:2",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 190,
-                    "name": "uint",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "323:4:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 193,
-                  "name": "_stationName",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 207,
-                  "src": "339:26:2",
-                  "stateVariable": false,
-                  "storageLocation": "memory",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_string_memory_ptr",
-                    "typeString": "string"
-                  },
-                  "typeName": {
-                    "id": 192,
-                    "name": "string",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "339:6:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage_ptr",
-                      "typeString": "string"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "305:61:2"
-            },
-            "returnParameters": {
-              "id": 195,
-              "nodeType": "ParameterList",
-              "parameters": [],
-              "src": "372:0:2"
-            },
             "scope": 238,
             "src": "265:16:2",
-            "stateMutability": "nonpayable",
-            "superFunction": null,
-            "visibility": "internal",
-            "constant": false,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -1824,7 +1079,8 @@
                 "typeString": "int_const 1"
               },
               "value": "1"
-            }
+            },
+            "visibility": "internal"
           },
           {
             "body": {
@@ -1833,82 +1089,6 @@
               "src": "373:105:2",
               "statements": [
                 {
-                  "assignments": [
-                    219
-                  ],
-                  "declarations": [
-                    {
-                      "constant": false,
-                      "id": 219,
-                      "name": "sd",
-                      "nodeType": "VariableDeclaration",
-                      "scope": 232,
-                      "src": "569:24:2",
-                      "stateVariable": false,
-                      "storageLocation": "memory",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_stationDetails_$183_memory_ptr",
-                        "typeString": "struct PoliceStation.stationDetails"
-                      },
-                      "typeName": {
-                        "contractScope": null,
-                        "id": 218,
-                        "name": "stationDetails",
-                        "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 183,
-                        "src": "569:14:2",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_stationDetails_$183_storage_ptr",
-                          "typeString": "struct PoliceStation.stationDetails"
-                        }
-                      },
-                      "value": null,
-                      "visibility": "internal"
-                    }
-                  ],
-                  "id": 206,
-                  "initialValue": {
-                    "argumentTypes": null,
-                    "baseExpression": {
-                      "argumentTypes": null,
-                      "id": 220,
-                      "name": "station",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 187,
-                      "src": "596:7:2",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_address_$_t_struct$_stationDetails_$183_storage_$",
-                        "typeString": "mapping(address => struct PoliceStation.stationDetails storage ref)"
-                      }
-                    },
-                    "id": 222,
-                    "indexExpression": {
-                      "argumentTypes": null,
-                      "id": 221,
-                      "name": "_address",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 209,
-                      "src": "604:8:2",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_address",
-                        "typeString": "address"
-                      }
-                    },
-                    "isConstant": false,
-                    "isLValue": true,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "nodeType": "IndexAccess",
-                    "src": "596:17:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_stationDetails_$183_storage",
-                      "typeString": "struct PoliceStation.stationDetails storage ref"
-                    }
-                  },
-                  "nodeType": "ExpressionStatement",
-                  "src": "383:67:2",
                   "expression": {
                     "argumentTypes": null,
                     "id": 205,
@@ -2046,114 +1226,23 @@
                       "typeIdentifier": "t_struct$_stationDetails_$183_storage",
                       "typeString": "struct PoliceStation.stationDetails storage ref"
                     }
-                  }
+                  },
+                  "id": 206,
+                  "nodeType": "ExpressionStatement",
+                  "src": "383:67:2"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "components": [
-                      {
-                        "argumentTypes": null,
-                        "expression": {
-                          "argumentTypes": null,
-                          "id": 224,
-                          "name": "sd",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 219,
-                          "src": "630:2:2",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_stationDetails_$183_memory_ptr",
-                            "typeString": "struct PoliceStation.stationDetails memory"
-                          }
-                        },
-                        "id": 225,
-                        "isConstant": false,
-                        "isLValue": true,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "memberName": "stationAccAddress",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": 182,
-                        "src": "630:20:2",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_address",
-                          "typeString": "address"
-                        }
-                      },
-                      {
-                        "argumentTypes": null,
-                        "expression": {
-                          "argumentTypes": null,
-                          "id": 226,
-                          "name": "sd",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 219,
-                          "src": "651:2:2",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_stationDetails_$183_memory_ptr",
-                            "typeString": "struct PoliceStation.stationDetails memory"
-                          }
-                        },
-                        "id": 227,
-                        "isConstant": false,
-                        "isLValue": true,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "memberName": "stationNo",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": 178,
-                        "src": "651:12:2",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_uint256",
-                          "typeString": "uint256"
-                        }
-                      },
-                      {
-                        "argumentTypes": null,
-                        "expression": {
-                          "argumentTypes": null,
-                          "id": 228,
-                          "name": "sd",
-                          "nodeType": "Identifier",
-                          "overloadedDeclarations": [],
-                          "referencedDeclaration": 219,
-                          "src": "664:2:2",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_stationDetails_$183_memory_ptr",
-                            "typeString": "struct PoliceStation.stationDetails memory"
-                          }
-                        },
-                        "id": 229,
-                        "isConstant": false,
-                        "isLValue": true,
-                        "isPure": false,
-                        "lValueRequested": false,
-                        "memberName": "stationName",
-                        "nodeType": "MemberAccess",
-                        "referencedDeclaration": 180,
-                        "src": "664:14:2",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_string_memory",
-                          "typeString": "string memory"
-                        }
-                      }
-                    ],
                     "id": 208,
                     "isConstant": false,
-                    "isInlineArray": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "nodeType": "UnaryOperation",
-                    "src": "460:11:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    },
                     "operator": "++",
                     "prefix": false,
+                    "src": "460:11:2",
                     "subExpression": {
                       "argumentTypes": null,
                       "id": 207,
@@ -2166,9 +1255,12 @@
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 217,
                   "id": 209,
                   "nodeType": "ExpressionStatement",
                   "src": "460:11:2"
@@ -2245,87 +1337,7 @@
             "returnParameters": {
               "id": 196,
               "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 212,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 233,
-                  "src": "532:7:2",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 211,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "532:7:2",
-                    "stateMutability": "nonpayable",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 214,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 233,
-                  "src": "540:4:2",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 213,
-                    "name": "uint",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "540:4:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 216,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 233,
-                  "src": "545:13:2",
-                  "stateVariable": false,
-                  "storageLocation": "memory",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_string_memory_ptr",
-                    "typeString": "string"
-                  },
-                  "typeName": {
-                    "id": 215,
-                    "name": "string",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "545:6:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_string_storage_ptr",
-                      "typeString": "string"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
+              "parameters": [],
               "src": "373:0:2"
             },
             "scope": 238,
@@ -2672,11 +1684,11 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+    "version": "0.5.1+commit.c8a2cb62.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "3.0.9",
-  "updatedAt": "2019-05-24T14:57:19.225Z",
+  "updatedAt": "2019-05-25T06:38:38.090Z",
   "devdoc": {
     "methods": {}
   },
