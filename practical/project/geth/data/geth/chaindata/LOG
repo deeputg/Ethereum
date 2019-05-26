@@ -1,0 +1,103 @@
+=============== May 26, 2019 (IST) ===============
+18:07:54.297714 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:07:54.445131 db@open opening
+18:07:54.456888 version@stat F·[] S·0B[] Sc·[]
+18:07:54.512214 db@janitor F·2 G·0
+18:07:54.512382 db@open done T·67.180788ms
+=============== May 26, 2019 (IST) ===============
+18:08:11.000646 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:08:11.001004 version@stat F·[] S·0B[] Sc·[]
+18:08:11.001034 db@open opening
+18:08:11.001139 journal@recovery F·1
+18:08:11.009665 journal@recovery recovering @1
+18:08:11.101624 memdb@flush created L0@2 N·11 S·698B "\x176\xc7..\xf3\x81B,v2":"sec..\xb4dy,v1"
+18:08:11.110998 version@stat F·[1] S·698B[698B] Sc·[0.25]
+18:08:11.214026 db@janitor F·3 G·0
+18:08:11.214099 db@open done T·213.029687ms
+=============== May 26, 2019 (IST) ===============
+18:34:44.914617 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:34:44.915091 version@stat F·[1] S·698B[698B] Sc·[0.25]
+18:34:44.915171 db@open opening
+18:34:44.915330 journal@recovery F·1
+18:34:44.925345 journal@recovery recovering @3
+18:34:45.021581 memdb@flush created L0@5 N·2 S·241B "Dat..ion,v13":"Las..der,v14"
+18:34:45.029809 version@stat F·[2] S·939B[939B] Sc·[0.50]
+18:34:45.133436 db@janitor F·4 G·0
+18:34:45.133514 db@open done T·218.279078ms
+=============== May 26, 2019 (IST) ===============
+18:42:56.028933 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:42:56.030122 version@stat F·[2] S·939B[939B] Sc·[0.50]
+18:42:56.030172 db@open opening
+18:42:56.030324 journal@recovery F·1
+18:42:56.037886 journal@recovery recovering @6
+18:42:56.141520 memdb@flush created L0@8 N·2 S·241B "Dat..ion,v16":"Las..der,v17"
+18:42:56.152398 version@stat F·[3] S·1KiB[1KiB] Sc·[0.75]
+18:42:56.275857 db@janitor F·5 G·0
+18:42:56.275925 db@open done T·245.721683ms
+=============== May 26, 2019 (IST) ===============
+18:46:21.452556 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:46:21.474605 version@stat F·[3] S·1KiB[1KiB] Sc·[0.75]
+18:46:21.474651 db@open opening
+18:46:21.474773 journal@recovery F·1
+18:46:21.485231 journal@recovery recovering @9
+18:46:21.573061 memdb@flush created L0@11 N·2 S·241B "Dat..ion,v19":"Las..der,v20"
+18:46:21.584596 version@stat F·[4] S·1KiB[1KiB] Sc·[1.00]
+18:46:21.707439 db@janitor F·6 G·0
+18:46:21.707574 db@open done T·232.89123ms
+18:46:21.707792 table@compaction L0·4 -> L1·0 S·1KiB Q·21
+18:46:21.751377 table@build created L1@14 N·12 S·721B "\x176\xc7..\xf3\x81B,v2":"sec..\xb4dy,v1"
+18:46:21.751509 version@stat F·[0 1] S·721B[0B 721B] Sc·[0.00 0.00]
+18:46:21.829455 table@compaction committed F-3 S-700B Ke·0 D·5 T·119.192814ms
+18:46:21.829624 table@remove removed @11
+18:46:21.829702 table@remove removed @8
+18:46:21.829780 table@remove removed @5
+18:46:21.830066 table@remove removed @2
+=============== May 26, 2019 (IST) ===============
+18:48:45.121592 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:48:45.156466 version@stat F·[0 1] S·721B[0B 721B] Sc·[0.00 0.00]
+18:48:45.156504 db@open opening
+18:48:45.156618 journal@recovery F·1
+18:48:45.162843 journal@recovery recovering @12
+18:48:45.248953 memdb@flush created L0@15 N·2 S·241B "Dat..ion,v22":"Las..der,v23"
+18:48:45.262588 version@stat F·[1 1] S·962B[241B 721B] Sc·[0.25 0.00]
+18:48:45.394220 db@janitor F·4 G·0
+18:48:45.394376 db@open done T·237.795271ms
+=============== May 26, 2019 (IST) ===============
+18:49:09.415781 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:49:09.416169 version@stat F·[1 1] S·962B[241B 721B] Sc·[0.25 0.00]
+18:49:09.416206 db@open opening
+18:49:09.416287 journal@recovery F·1
+18:49:09.423221 journal@recovery recovering @16
+18:49:09.469613 memdb@flush created L0@18 N·56 S·2KiB "Dat..ion,v25":"r\x00\x00..a\xf7\xa0,v76"
+18:49:09.485154 version@stat F·[2 1] S·3KiB[2KiB 721B] Sc·[0.50 0.00]
+18:49:09.615170 db@janitor F·5 G·0
+18:49:09.615368 db@open done T·199.061178ms
+=============== May 26, 2019 (IST) ===============
+18:49:47.930048 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:49:47.930290 version@stat F·[2 1] S·3KiB[2KiB 721B] Sc·[0.50 0.00]
+18:49:47.930308 db@open opening
+18:49:47.930381 journal@recovery F·1
+18:49:47.936650 journal@recovery recovering @19
+18:49:48.001865 memdb@flush created L0@21 N·47 S·1KiB "Dat..ion,v82":"r\x00\x00..E\x91\x9a,v124"
+18:49:48.014175 version@stat F·[3 1] S·5KiB[4KiB 721B] Sc·[0.75 0.00]
+18:49:48.126647 db@janitor F·6 G·0
+18:49:48.126785 db@open done T·196.440823ms
+=============== May 26, 2019 (IST) ===============
+18:51:17.568531 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:51:17.569003 version@stat F·[3 1] S·5KiB[4KiB 721B] Sc·[0.75 0.00]
+18:51:17.569036 db@open opening
+18:51:17.569168 journal@recovery F·1
+18:51:17.578088 journal@recovery recovering @22
+18:51:17.905562 memdb@flush created L0@24 N·83 S·3KiB "Dat..ion,v130":"r\x00\x00..\xf8b\r,v208"
+18:51:17.917891 version@stat F·[4 1] S·8KiB[7KiB 721B] Sc·[1.00 0.00]
+18:51:18.261852 db@janitor F·7 G·0
+18:51:18.261989 db@open done T·692.917619ms
+18:51:18.262186 table@compaction L0·4 -> L1·1 S·8KiB Q·213
+18:51:18.338537 table@build created L1@27 N·122 S·6KiB "\x176\xc7..\xf3\x81B,v2":"sec..\xb4dy,v1"
+18:51:18.338662 version@stat F·[0 1] S·6KiB[0B 6KiB] Sc·[0.00 0.00]
+18:51:18.450195 table@compaction committed F-4 S-2KiB Ke·0 D·78 T·187.933603ms
+18:51:18.450407 table@remove removed @24
+18:51:18.450512 table@remove removed @21
+18:51:18.450604 table@remove removed @18
+18:51:18.450695 table@remove removed @15
+18:51:18.450782 table@remove removed @14

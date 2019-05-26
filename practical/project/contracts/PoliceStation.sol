@@ -13,9 +13,10 @@ contract PoliceStation{
     uint stationNo=1;
     
     
-    function setPoliceStation(address _address,string memory _stationName)public{
+    function setPoliceStation(address _address,string memory _stationName)public returns(address){
         station[_address] = stationDetails(stationNo,_stationName,_address);
         stationNo++;
+        return _address;
     }
     
     function getStationDetails(address _address) public view returns(address,uint,string memory){
