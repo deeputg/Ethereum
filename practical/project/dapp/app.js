@@ -13,6 +13,7 @@ var sess = {
 var indexRouter = require('./routes/index');
 var loginRouter = require('./routes/login');
 var logoutRouter = require('./routes/logout');
+var publicRouter = require("./routes/public");
 var policeStationRouter = require("./routes/policestation")
 
 Web3 = require('web3')
@@ -47,6 +48,7 @@ app.use('/', indexRouter);
 app.use('/login', loginRouter);
 app.use("/policestation",policeStationRouter);
 app.use('/logout',logoutRouter);
+app.use('/public',publicRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

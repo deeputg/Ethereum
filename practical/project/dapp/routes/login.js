@@ -11,6 +11,7 @@ router.post('/',function(req,res){
     if(!req.session.userAddr){
         web3.eth.personal.unlockAccount(ownerAddr,req.body.adminPassword,600).then((result)=>{
             req.session.userAddr=ownerAddr;
+            req.session.superAdmin =true;
             res.redirect("/")
           }).catch((secondResult)=>{
             res.redirect("/login?al=fail");

@@ -5,12 +5,16 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
+    <div style="float: right"><a href="/logout">Logout</a></div>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
 <div style="float: left;">
+  <%if(data.superAdminPanel){%>
     <p><a href="policestation/add">Add police Station</a></p>
+
+  <% }%>
     <p><a href="policestation/add-court">Add Court</a></p>
-    <p><a href="policestation/add-civilian">Add a Civilian</a></p>
+    <p><a href="public/add-civilian">Add a Civilian</a></p>
     <p><a href="court/add-judge">Add a Judge</a></p>
     
     <p><a href="policestation/add-officer">Add an Invnestigatio  Oficer</a></p>

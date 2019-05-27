@@ -19,14 +19,12 @@ router.post("/add",async function(req,res){
         web3.eth.personal.newAccount(req.body.stationPassword).then((data)=>{
             
             CaseReg.methods.setPoliceStation(data.toLowerCase(),req.body.stationName).send({from:ownerAddr,gas:6000000}).then((stationDetails)=>{
-                console.log(stationDetails)
-                res.send(stationDetails);
+                res.redirect("/?psa=success&addr="+data);
             }).catch((err)=>{
-                console.log("error calling setPoliceStation Method : "+err);
-                console.log(util.inspect(err, false, null, true /* enable colors */))
+                res.send(err);
             })
         }).catch(err2=>{
-            console.log("error calling newAccount : "+err2);
+            res.send(err2);
         })
     }
 })

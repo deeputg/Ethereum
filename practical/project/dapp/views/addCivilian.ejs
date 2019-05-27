@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Police station</title>
+</head>
+<body>
+    <h2> Enter a Civilian</h2>
+    <form action="/public/add-civilian" method="post">
+        <p>Name : <input type="text" name="name"> </p>
+        <p>ID type : <select name="idType" id="">
+            <option value="voterId">Voter ID</option>
+            <option value="adharCart">Adhar Card</option>
+            <option value="drivingLicence">Drivers Licence</option>
+        </select> </p>
+        <p>ID No : <input type="text" name="idNo"> </p>
+        <p>age : <input type="text" name="age"> </p>
+            <button type="submit">Register</button></p> 
+    </form>
+</body>
+</html>

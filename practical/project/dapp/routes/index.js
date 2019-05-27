@@ -12,10 +12,18 @@ authCheck = function(req,res,next){
 
 /* GET home page. */
 router.get('/',authCheck, function(req, res, next) {
-  // web3.eth.getAccounts().then((data)=>{
-  //   //console.log(data);
-  // })
-  res.render('index', { title: 'Case Management' });
+  data= [];
+
+  web3.eth.getBalance(req.session.userAddr).then((data)=>{
+    console.log("Balance is "+data)
+    if(req.session.superAdmin)
+      data.superAdminPanel=true;
+      res.render('index', { title: 'Case Management',data:data });
+    }).catch((err)=>{
+      console.log("Error getting Balance"+err);
+    });
+
+  
 });
 
 
