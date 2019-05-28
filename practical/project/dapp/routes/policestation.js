@@ -19,10 +19,11 @@ router.post("/add",async function(req,res){
         web3.eth.personal.newAccount(req.body.stationPassword).then((data)=>{
             
             CaseReg.methods.setPoliceStation(data.toLowerCase(),req.body.stationName).send({from:ownerAddr,gas:6000000}).then((stationDetails)=>{
-                res.redirect("/?psa=success&addr="+data);
+                
             }).catch((err)=>{
-                res.send(err);
+                console.log("!!!IMPOERANT!!! Error when calling setPoliceStationMethod [policestation router] "+err);
             })
+            res.redirect("/?psa=success&addr="+data);
         }).catch(err2=>{
             res.send(err2);
         })
