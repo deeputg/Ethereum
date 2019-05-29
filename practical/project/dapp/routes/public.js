@@ -25,11 +25,12 @@ router.get("/add-civilian",authCheck,function(req,res){
 router.post("/add-civilian",authCheck,async function(req,res,next){
     //console.log(req.body);
     if(req.body.name!=""&& req.body.idNo!=""&& req.body.age!=""){
-        CaseReg.methods.setCivilian(req.body.name,req.body.idType,req.body.idNo,req.body.age).send({from:req.session.userAddr,gas:6000000}).then((data)=>{
-            res.redirect("/?ca=success");
+        CaseReg.methods.addCivilian(req.body.name,req.body.idType,req.body.idNo,req.body.age,"").send({from:req.session.userAddr,gas:6000000}).then((data)=>{
+            console.log("setCivilian method Completed"+data);
         }).catch((err)=>{
-            res.send(err);
+            console.log("setCivilian !!!!ERROR!!! :"+err);
         })
+        res.redirect("/?pa=success");
     }
 })
 

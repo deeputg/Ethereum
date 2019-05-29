@@ -1,0 +1,2538 @@
+{
+  "contractName": "Civilians",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "civilianNumber",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_name",
+          "type": "string"
+        },
+        {
+          "name": "_idType",
+          "type": "uint8"
+        },
+        {
+          "name": "_id",
+          "type": "string"
+        },
+        {
+          "name": "_age",
+          "type": "uint256"
+        },
+        {
+          "name": "_pics",
+          "type": "string"
+        }
+      ],
+      "name": "addCivilian",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_number",
+          "type": "uint256"
+        }
+      ],
+      "name": "getCivilian",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "string"
+        },
+        {
+          "name": "",
+          "type": "uint8"
+        },
+        {
+          "name": "",
+          "type": "string"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.1+commit.c8a2cb62\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"civilianNumber\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_number\",\"type\":\"uint256\"}],\"name\":\"getCivilian\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"},{\"name\":\"\",\"type\":\"string\"},{\"name\":\"\",\"type\":\"uint8\"},{\"name\":\"\",\"type\":\"string\"},{\"name\":\"\",\"type\":\"uint256\"},{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_name\",\"type\":\"string\"},{\"name\":\"_idType\",\"type\":\"uint8\"},{\"name\":\"_id\",\"type\":\"string\"},{\"name\":\"_age\",\"type\":\"uint256\"},{\"name\":\"_pics\",\"type\":\"string\"}],\"name\":\"addCivilian\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/deepu/Deepu/CED program/practical/project/contracts/Civilians.sol\":\"Civilians\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/deepu/Deepu/CED program/practical/project/contracts/Civilians.sol\":{\"keccak256\":\"0xbbeebd64f4695915ccf5cbc1980281798ad7d90e1e9a6d77ae7607e8059edcd2\",\"urls\":[\"bzzr://7c1324a7da3c4220e093d21f727af69878c0a34a826e4d0589f595c794107b2f\"]}},\"version\":1}",
+  "bytecode": "0x60806040526000805534801561001457600080fd5b506108ed806100246000396000f3fe608060405260043610610051576000357c01000000000000000000000000000000000000000000000000000000009004806355bf5a5514610056578063578361ea14610081578063d8739b0d14610230575b600080fd5b34801561006257600080fd5b5061006b61043d565b6040518082815260200191505060405180910390f35b34801561008d57600080fd5b506100ba600480360360208110156100a457600080fd5b8101908080359060200190929190505050610443565b60405180878152602001806020018660028111156100d457fe5b60ff1681526020018060200185815260200180602001848103845289818151815260200191508051906020019080838360005b83811015610122578082015181840152602081019050610107565b50505050905090810190601f16801561014f5780820380516001836020036101000a031916815260200191505b50848103835287818151815260200191508051906020019080838360005b8381101561018857808201518184015260208101905061016d565b50505050905090810190601f1680156101b55780820380516001836020036101000a031916815260200191505b50848103825285818151815260200191508051906020019080838360005b838110156101ee5780820151818401526020810190506101d3565b50505050905090810190601f16801561021b5780820380516001836020036101000a031916815260200191505b50995050505050505050505060405180910390f35b34801561023c57600080fd5b5061043b600480360360a081101561025357600080fd5b810190808035906020019064010000000081111561027057600080fd5b82018360208201111561028257600080fd5b803590602001918460018302840111640100000000831117156102a457600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290803560ff1690602001909291908035906020019064010000000081111561031457600080fd5b82018360208201111561032657600080fd5b8035906020019184600183028401116401000000008311171561034857600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f82011690508083019250505050505050919291929080359060200190929190803590602001906401000000008111156103b557600080fd5b8201836020820111156103c757600080fd5b803590602001918460018302840111640100000000831117156103e957600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506106dc565b005b60005481565b6000606060006060600060606104576107da565b6001600089815260200190815260200160002060c0604051908101604052908160008201548152602001600182018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105195780601f106104ee57610100808354040283529160200191610519565b820191906000526020600020905b8154815290600101906020018083116104fc57829003601f168201915b505050505081526020016002820160009054906101000a900460ff16600281111561054057fe5b600281111561054b57fe5b8152602001600382018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105e85780601f106105bd576101008083540402835291602001916105e8565b820191906000526020600020905b8154815290600101906020018083116105cb57829003601f168201915b5050505050815260200160048201548152602001600582018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156106945780601f1061066957610100808354040283529160200191610694565b820191906000526020600020905b81548152906001019060200180831161067757829003601f168201915b5050505050815250509050806000015181602001518260400151836060015184608001518560a001518494508292508090509650965096509650965096505091939550919395565b60c060405190810160405280600054815260200186815260200185600281111561070257fe5b815260200184815260200183815260200182815250600160008054815260200190815260200160002060008201518160000155602082015181600101908051906020019061075192919061081c565b5060408201518160020160006101000a81548160ff0219169083600281111561077657fe5b0217905550606082015181600301908051906020019061079792919061081c565b506080820151816004015560a08201518160050190805190602001906107be92919061081c565b5090505060008081548092919060010191905055505050505050565b60c06040519081016040528060008152602001606081526020016000600281111561080157fe5b81526020016060815260200160008152602001606081525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061085d57805160ff191683800117855561088b565b8280016001018555821561088b579182015b8281111561088a57825182559160200191906001019061086f565b5b509050610898919061089c565b5090565b6108be91905b808211156108ba5760008160009055506001016108a2565b5090565b9056fea165627a7a72305820446aed7be3b3c470fdbeaa67b5070356e425943b1a72e60506ae8c1d5843843c0029",
+  "deployedBytecode": "0x608060405260043610610051576000357c01000000000000000000000000000000000000000000000000000000009004806355bf5a5514610056578063578361ea14610081578063d8739b0d14610230575b600080fd5b34801561006257600080fd5b5061006b61043d565b6040518082815260200191505060405180910390f35b34801561008d57600080fd5b506100ba600480360360208110156100a457600080fd5b8101908080359060200190929190505050610443565b60405180878152602001806020018660028111156100d457fe5b60ff1681526020018060200185815260200180602001848103845289818151815260200191508051906020019080838360005b83811015610122578082015181840152602081019050610107565b50505050905090810190601f16801561014f5780820380516001836020036101000a031916815260200191505b50848103835287818151815260200191508051906020019080838360005b8381101561018857808201518184015260208101905061016d565b50505050905090810190601f1680156101b55780820380516001836020036101000a031916815260200191505b50848103825285818151815260200191508051906020019080838360005b838110156101ee5780820151818401526020810190506101d3565b50505050905090810190601f16801561021b5780820380516001836020036101000a031916815260200191505b50995050505050505050505060405180910390f35b34801561023c57600080fd5b5061043b600480360360a081101561025357600080fd5b810190808035906020019064010000000081111561027057600080fd5b82018360208201111561028257600080fd5b803590602001918460018302840111640100000000831117156102a457600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290803560ff1690602001909291908035906020019064010000000081111561031457600080fd5b82018360208201111561032657600080fd5b8035906020019184600183028401116401000000008311171561034857600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f82011690508083019250505050505050919291929080359060200190929190803590602001906401000000008111156103b557600080fd5b8201836020820111156103c757600080fd5b803590602001918460018302840111640100000000831117156103e957600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506106dc565b005b60005481565b6000606060006060600060606104576107da565b6001600089815260200190815260200160002060c0604051908101604052908160008201548152602001600182018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105195780601f106104ee57610100808354040283529160200191610519565b820191906000526020600020905b8154815290600101906020018083116104fc57829003601f168201915b505050505081526020016002820160009054906101000a900460ff16600281111561054057fe5b600281111561054b57fe5b8152602001600382018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105e85780601f106105bd576101008083540402835291602001916105e8565b820191906000526020600020905b8154815290600101906020018083116105cb57829003601f168201915b5050505050815260200160048201548152602001600582018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156106945780601f1061066957610100808354040283529160200191610694565b820191906000526020600020905b81548152906001019060200180831161067757829003601f168201915b5050505050815250509050806000015181602001518260400151836060015184608001518560a001518494508292508090509650965096509650965096505091939550919395565b60c060405190810160405280600054815260200186815260200185600281111561070257fe5b815260200184815260200183815260200182815250600160008054815260200190815260200160002060008201518160000155602082015181600101908051906020019061075192919061081c565b5060408201518160020160006101000a81548160ff0219169083600281111561077657fe5b0217905550606082015181600301908051906020019061079792919061081c565b506080820151816004015560a08201518160050190805190602001906107be92919061081c565b5090505060008081548092919060010191905055505050505050565b60c06040519081016040528060008152602001606081526020016000600281111561080157fe5b81526020016060815260200160008152602001606081525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061085d57805160ff191683800117855561088b565b8280016001018555821561088b579182015b8281111561088a57825182559160200191906001019061086f565b5b509050610898919061089c565b5090565b6108be91905b808211156108ba5760008160009055506001016108a2565b5090565b9056fea165627a7a72305820446aed7be3b3c470fdbeaa67b5070356e425943b1a72e60506ae8c1d5843843c0029",
+  "sourceMap": "25:868:1:-;;;78:1;49:30;;25:868;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:868:1;;;;;;;",
+  "deployedSourceMap": "25:868:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;49:30;;8:9:-1;5:2;;;30:1;27;20:12;5:2;49:30:1;;;:::i;:::-;;;;;;;;;;;;;;;;;;;630:251;;8:9:-1;5:2;;;30:1;27;20:12;5:2;630:251:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;630:251:1;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;630:251:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;630:251:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;630:251:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;357:263;;8:9:-1;5:2;;;30:1;27;20:12;5:2;357:263:1;;;;;;13:3:-1;8;5:12;2:2;;;30:1;27;20:12;2:2;357:263:1;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;357:263:1;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;357:263:1;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;357:263:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;357:263:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;357:263:1;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;357:263:1;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;357:263:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;357:263:1;;;;;;;;;;;;;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;357:263:1;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;357:263:1;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;357:263:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;357:263:1;;;;;;;;;;;;;;;:::i;:::-;;49:30;;;;:::o;630:251::-;684:4;689:13;703:6;710:13;724:4;729:13;753:25;;:::i;:::-;781:11;:20;793:7;781:20;;;;;;;;;;;753:48;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;819:2;:13;;;833:2;:7;;;841:2;:5;;;847:2;:11;;;859:2;:6;;;866:2;:7;;;811:63;;;;;;;;;;;;;;;;;;;;;;630:251;;;;;;;:::o;357:263::-;527:60;;;;;;;;;543:14;;527:60;;;;558:5;527:60;;;;564:7;527:60;;;;;;;;;;;;572:3;527:60;;;;576:4;527:60;;;;581:5;527:60;;;499:11;:27;511:14;;499:27;;;;;;;;;;;:88;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;597:14;;:16;;;;;;;;;;;;;357:263;;;;;:::o;25:868::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\n\ncontract Civilians{\n    uint public civilianNumber = 0;\n    enum idType{votersId,adharCard,drivingLicence}\n    struct civilianDetails{\n        uint civilianNo;\n        string name;\n        idType id;\n        string idNumber;\n        uint age;\n        string pics;\n    }\n    \n    mapping(uint=>civilianDetails) civilianReg;\n    \n    function addCivilian(string memory _name,idType _idType,string memory _id,uint _age,string memory _pics) public {\n       // _pics = ;\n        civilianReg[civilianNumber]=civilianDetails(civilianNumber,_name,_idType,_id,_age,_pics);\n        civilianNumber++;\n    }\n    \n    function getCivilian(uint _number)public view returns(uint,string memory,idType,string memory,uint,string memory){\n        civilianDetails memory cd = civilianReg[_number];\n        return (cd.civilianNo,cd.name,cd.id,cd.idNumber,cd.age,cd.pics);\n    }\n    \n    \n}",
+  "sourcePath": "/home/deepu/Deepu/CED program/practical/project/contracts/Civilians.sol",
+  "ast": {
+    "absolutePath": "/home/deepu/Deepu/CED program/practical/project/contracts/Civilians.sol",
+    "exportedSymbols": {
+      "Civilians": [
+        271
+      ]
+    },
+    "id": 272,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 178,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 271,
+        "linearizedBaseContracts": [
+          271
+        ],
+        "name": "Civilians",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 181,
+            "name": "civilianNumber",
+            "nodeType": "VariableDeclaration",
+            "scope": 271,
+            "src": "49:30:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 179,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "49:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 180,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "78:1:1",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Civilians.idType",
+            "id": 185,
+            "members": [
+              {
+                "id": 182,
+                "name": "votersId",
+                "nodeType": "EnumValue",
+                "src": "97:8:1"
+              },
+              {
+                "id": 183,
+                "name": "adharCard",
+                "nodeType": "EnumValue",
+                "src": "106:9:1"
+              },
+              {
+                "id": 184,
+                "name": "drivingLicence",
+                "nodeType": "EnumValue",
+                "src": "116:14:1"
+              }
+            ],
+            "name": "idType",
+            "nodeType": "EnumDefinition",
+            "src": "85:46:1"
+          },
+          {
+            "canonicalName": "Civilians.civilianDetails",
+            "id": 198,
+            "members": [
+              {
+                "constant": false,
+                "id": 187,
+                "name": "civilianNo",
+                "nodeType": "VariableDeclaration",
+                "scope": 198,
+                "src": "168:15:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 186,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "168:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 189,
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 198,
+                "src": "193:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 188,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "193:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 191,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 198,
+                "src": "214:9:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_idType_$185",
+                  "typeString": "enum Civilians.idType"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 190,
+                  "name": "idType",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 185,
+                  "src": "214:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_idType_$185",
+                    "typeString": "enum Civilians.idType"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 193,
+                "name": "idNumber",
+                "nodeType": "VariableDeclaration",
+                "scope": 198,
+                "src": "233:15:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 192,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "233:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 195,
+                "name": "age",
+                "nodeType": "VariableDeclaration",
+                "scope": 198,
+                "src": "258:8:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 194,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "258:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 197,
+                "name": "pics",
+                "nodeType": "VariableDeclaration",
+                "scope": 198,
+                "src": "276:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 196,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "276:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "civilianDetails",
+            "nodeType": "StructDefinition",
+            "scope": 271,
+            "src": "136:158:1",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 202,
+            "name": "civilianReg",
+            "nodeType": "VariableDeclaration",
+            "scope": 271,
+            "src": "304:42:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_civilianDetails_$198_storage_$",
+              "typeString": "mapping(uint256 => struct Civilians.civilianDetails)"
+            },
+            "typeName": {
+              "id": 201,
+              "keyType": {
+                "id": 199,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "312:4:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "304:30:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_civilianDetails_$198_storage_$",
+                "typeString": "mapping(uint256 => struct Civilians.civilianDetails)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 200,
+                "name": "civilianDetails",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 198,
+                "src": "318:15:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_civilianDetails_$198_storage_ptr",
+                  "typeString": "struct Civilians.civilianDetails"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 231,
+              "nodeType": "Block",
+              "src": "469:151:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 226,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 215,
+                        "name": "civilianReg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 202,
+                        "src": "499:11:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_civilianDetails_$198_storage_$",
+                          "typeString": "mapping(uint256 => struct Civilians.civilianDetails storage ref)"
+                        }
+                      },
+                      "id": 217,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 216,
+                        "name": "civilianNumber",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 181,
+                        "src": "511:14:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "499:27:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_civilianDetails_$198_storage",
+                        "typeString": "struct Civilians.civilianDetails storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 219,
+                          "name": "civilianNumber",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 181,
+                          "src": "543:14:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 220,
+                          "name": "_name",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 204,
+                          "src": "558:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 221,
+                          "name": "_idType",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 206,
+                          "src": "564:7:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_idType_$185",
+                            "typeString": "enum Civilians.idType"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 222,
+                          "name": "_id",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 208,
+                          "src": "572:3:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 223,
+                          "name": "_age",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 210,
+                          "src": "576:4:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 224,
+                          "name": "_pics",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 212,
+                          "src": "581:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_enum$_idType_$185",
+                            "typeString": "enum Civilians.idType"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        ],
+                        "id": 218,
+                        "name": "civilianDetails",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 198,
+                        "src": "527:15:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_civilianDetails_$198_storage_ptr_$",
+                          "typeString": "type(struct Civilians.civilianDetails storage pointer)"
+                        }
+                      },
+                      "id": 225,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "527:60:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_civilianDetails_$198_memory",
+                        "typeString": "struct Civilians.civilianDetails memory"
+                      }
+                    },
+                    "src": "499:88:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_civilianDetails_$198_storage",
+                      "typeString": "struct Civilians.civilianDetails storage ref"
+                    }
+                  },
+                  "id": 227,
+                  "nodeType": "ExpressionStatement",
+                  "src": "499:88:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 229,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "597:16:1",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 228,
+                      "name": "civilianNumber",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 181,
+                      "src": "597:14:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 230,
+                  "nodeType": "ExpressionStatement",
+                  "src": "597:16:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 232,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addCivilian",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 213,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 204,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 232,
+                  "src": "378:19:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 203,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "378:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 206,
+                  "name": "_idType",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 232,
+                  "src": "398:14:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_idType_$185",
+                    "typeString": "enum Civilians.idType"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 205,
+                    "name": "idType",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 185,
+                    "src": "398:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_idType_$185",
+                      "typeString": "enum Civilians.idType"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 208,
+                  "name": "_id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 232,
+                  "src": "413:17:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 207,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "413:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 210,
+                  "name": "_age",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 232,
+                  "src": "431:9:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 209,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "431:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 212,
+                  "name": "_pics",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 232,
+                  "src": "441:19:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 211,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "441:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "377:84:1"
+            },
+            "returnParameters": {
+              "id": 214,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "469:0:1"
+            },
+            "scope": 271,
+            "src": "357:263:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 269,
+              "nodeType": "Block",
+              "src": "743:138:1",
+              "statements": [
+                {
+                  "assignments": [
+                    250
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 250,
+                      "name": "cd",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 269,
+                      "src": "753:25:1",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_civilianDetails_$198_memory_ptr",
+                        "typeString": "struct Civilians.civilianDetails"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 249,
+                        "name": "civilianDetails",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 198,
+                        "src": "753:15:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_civilianDetails_$198_storage_ptr",
+                          "typeString": "struct Civilians.civilianDetails"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 254,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 251,
+                      "name": "civilianReg",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 202,
+                      "src": "781:11:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_civilianDetails_$198_storage_$",
+                        "typeString": "mapping(uint256 => struct Civilians.civilianDetails storage ref)"
+                      }
+                    },
+                    "id": 253,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 252,
+                      "name": "_number",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 234,
+                      "src": "793:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "781:20:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_civilianDetails_$198_storage",
+                      "typeString": "struct Civilians.civilianDetails storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "753:48:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "components": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 255,
+                          "name": "cd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 250,
+                          "src": "819:2:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_civilianDetails_$198_memory_ptr",
+                            "typeString": "struct Civilians.civilianDetails memory"
+                          }
+                        },
+                        "id": 256,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "civilianNo",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 187,
+                        "src": "819:13:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 257,
+                          "name": "cd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 250,
+                          "src": "833:2:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_civilianDetails_$198_memory_ptr",
+                            "typeString": "struct Civilians.civilianDetails memory"
+                          }
+                        },
+                        "id": 258,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "name",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 189,
+                        "src": "833:7:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 259,
+                          "name": "cd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 250,
+                          "src": "841:2:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_civilianDetails_$198_memory_ptr",
+                            "typeString": "struct Civilians.civilianDetails memory"
+                          }
+                        },
+                        "id": 260,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "id",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 191,
+                        "src": "841:5:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_idType_$185",
+                          "typeString": "enum Civilians.idType"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 261,
+                          "name": "cd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 250,
+                          "src": "847:2:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_civilianDetails_$198_memory_ptr",
+                            "typeString": "struct Civilians.civilianDetails memory"
+                          }
+                        },
+                        "id": 262,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "idNumber",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 193,
+                        "src": "847:11:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 263,
+                          "name": "cd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 250,
+                          "src": "859:2:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_civilianDetails_$198_memory_ptr",
+                            "typeString": "struct Civilians.civilianDetails memory"
+                          }
+                        },
+                        "id": 264,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "age",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 195,
+                        "src": "859:6:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 265,
+                          "name": "cd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 250,
+                          "src": "866:2:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_civilianDetails_$198_memory_ptr",
+                            "typeString": "struct Civilians.civilianDetails memory"
+                          }
+                        },
+                        "id": 266,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "pics",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 197,
+                        "src": "866:7:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "id": 267,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "818:56:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_uint256_$_t_string_memory_$_t_enum$_idType_$185_$_t_string_memory_$_t_uint256_$_t_string_memory_$",
+                      "typeString": "tuple(uint256,string memory,enum Civilians.idType,string memory,uint256,string memory)"
+                    }
+                  },
+                  "functionReturnParameters": 248,
+                  "id": 268,
+                  "nodeType": "Return",
+                  "src": "811:63:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 270,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCivilian",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 235,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 234,
+                  "name": "_number",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 270,
+                  "src": "651:12:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 233,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "651:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "650:14:1"
+            },
+            "returnParameters": {
+              "id": 248,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 237,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 270,
+                  "src": "684:4:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 236,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "684:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 239,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 270,
+                  "src": "689:13:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 238,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "689:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 241,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 270,
+                  "src": "703:6:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_idType_$185",
+                    "typeString": "enum Civilians.idType"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 240,
+                    "name": "idType",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 185,
+                    "src": "703:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_idType_$185",
+                      "typeString": "enum Civilians.idType"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 243,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 270,
+                  "src": "710:13:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 242,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "710:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 245,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 270,
+                  "src": "724:4:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 244,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "724:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 247,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 270,
+                  "src": "729:13:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 246,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "729:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "683:60:1"
+            },
+            "scope": 271,
+            "src": "630:251:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 272,
+        "src": "25:868:1"
+      }
+    ],
+    "src": "0:893:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/deepu/Deepu/CED program/practical/project/contracts/Civilians.sol",
+    "exportedSymbols": {
+      "Civilians": [
+        271
+      ]
+    },
+    "id": 272,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 178,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 271,
+        "linearizedBaseContracts": [
+          271
+        ],
+        "name": "Civilians",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 181,
+            "name": "civilianNumber",
+            "nodeType": "VariableDeclaration",
+            "scope": 271,
+            "src": "49:30:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 179,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "49:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 180,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "78:1:1",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Civilians.idType",
+            "id": 185,
+            "members": [
+              {
+                "id": 182,
+                "name": "votersId",
+                "nodeType": "EnumValue",
+                "src": "97:8:1"
+              },
+              {
+                "id": 183,
+                "name": "adharCard",
+                "nodeType": "EnumValue",
+                "src": "106:9:1"
+              },
+              {
+                "id": 184,
+                "name": "drivingLicence",
+                "nodeType": "EnumValue",
+                "src": "116:14:1"
+              }
+            ],
+            "name": "idType",
+            "nodeType": "EnumDefinition",
+            "src": "85:46:1"
+          },
+          {
+            "canonicalName": "Civilians.civilianDetails",
+            "id": 198,
+            "members": [
+              {
+                "constant": false,
+                "id": 187,
+                "name": "civilianNo",
+                "nodeType": "VariableDeclaration",
+                "scope": 198,
+                "src": "168:15:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 186,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "168:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 189,
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 198,
+                "src": "193:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 188,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "193:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 191,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 198,
+                "src": "214:9:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_idType_$185",
+                  "typeString": "enum Civilians.idType"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 190,
+                  "name": "idType",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 185,
+                  "src": "214:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_idType_$185",
+                    "typeString": "enum Civilians.idType"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 193,
+                "name": "idNumber",
+                "nodeType": "VariableDeclaration",
+                "scope": 198,
+                "src": "233:15:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 192,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "233:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 195,
+                "name": "age",
+                "nodeType": "VariableDeclaration",
+                "scope": 198,
+                "src": "258:8:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 194,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "258:4:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 197,
+                "name": "pics",
+                "nodeType": "VariableDeclaration",
+                "scope": 198,
+                "src": "276:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 196,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "276:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "civilianDetails",
+            "nodeType": "StructDefinition",
+            "scope": 271,
+            "src": "136:158:1",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 202,
+            "name": "civilianReg",
+            "nodeType": "VariableDeclaration",
+            "scope": 271,
+            "src": "304:42:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_civilianDetails_$198_storage_$",
+              "typeString": "mapping(uint256 => struct Civilians.civilianDetails)"
+            },
+            "typeName": {
+              "id": 201,
+              "keyType": {
+                "id": 199,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "312:4:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "304:30:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_civilianDetails_$198_storage_$",
+                "typeString": "mapping(uint256 => struct Civilians.civilianDetails)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 200,
+                "name": "civilianDetails",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 198,
+                "src": "318:15:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_civilianDetails_$198_storage_ptr",
+                  "typeString": "struct Civilians.civilianDetails"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 231,
+              "nodeType": "Block",
+              "src": "469:151:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 226,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 215,
+                        "name": "civilianReg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 202,
+                        "src": "499:11:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_civilianDetails_$198_storage_$",
+                          "typeString": "mapping(uint256 => struct Civilians.civilianDetails storage ref)"
+                        }
+                      },
+                      "id": 217,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 216,
+                        "name": "civilianNumber",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 181,
+                        "src": "511:14:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "499:27:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_civilianDetails_$198_storage",
+                        "typeString": "struct Civilians.civilianDetails storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 219,
+                          "name": "civilianNumber",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 181,
+                          "src": "543:14:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 220,
+                          "name": "_name",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 204,
+                          "src": "558:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 221,
+                          "name": "_idType",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 206,
+                          "src": "564:7:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_idType_$185",
+                            "typeString": "enum Civilians.idType"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 222,
+                          "name": "_id",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 208,
+                          "src": "572:3:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 223,
+                          "name": "_age",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 210,
+                          "src": "576:4:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 224,
+                          "name": "_pics",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 212,
+                          "src": "581:5:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_enum$_idType_$185",
+                            "typeString": "enum Civilians.idType"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        ],
+                        "id": 218,
+                        "name": "civilianDetails",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 198,
+                        "src": "527:15:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_civilianDetails_$198_storage_ptr_$",
+                          "typeString": "type(struct Civilians.civilianDetails storage pointer)"
+                        }
+                      },
+                      "id": 225,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "527:60:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_civilianDetails_$198_memory",
+                        "typeString": "struct Civilians.civilianDetails memory"
+                      }
+                    },
+                    "src": "499:88:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_civilianDetails_$198_storage",
+                      "typeString": "struct Civilians.civilianDetails storage ref"
+                    }
+                  },
+                  "id": 227,
+                  "nodeType": "ExpressionStatement",
+                  "src": "499:88:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 229,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "597:16:1",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 228,
+                      "name": "civilianNumber",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 181,
+                      "src": "597:14:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 230,
+                  "nodeType": "ExpressionStatement",
+                  "src": "597:16:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 232,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addCivilian",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 213,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 204,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 232,
+                  "src": "378:19:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 203,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "378:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 206,
+                  "name": "_idType",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 232,
+                  "src": "398:14:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_idType_$185",
+                    "typeString": "enum Civilians.idType"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 205,
+                    "name": "idType",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 185,
+                    "src": "398:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_idType_$185",
+                      "typeString": "enum Civilians.idType"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 208,
+                  "name": "_id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 232,
+                  "src": "413:17:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 207,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "413:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 210,
+                  "name": "_age",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 232,
+                  "src": "431:9:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 209,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "431:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 212,
+                  "name": "_pics",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 232,
+                  "src": "441:19:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 211,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "441:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "377:84:1"
+            },
+            "returnParameters": {
+              "id": 214,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "469:0:1"
+            },
+            "scope": 271,
+            "src": "357:263:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 269,
+              "nodeType": "Block",
+              "src": "743:138:1",
+              "statements": [
+                {
+                  "assignments": [
+                    250
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 250,
+                      "name": "cd",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 269,
+                      "src": "753:25:1",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_civilianDetails_$198_memory_ptr",
+                        "typeString": "struct Civilians.civilianDetails"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 249,
+                        "name": "civilianDetails",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 198,
+                        "src": "753:15:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_civilianDetails_$198_storage_ptr",
+                          "typeString": "struct Civilians.civilianDetails"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 254,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 251,
+                      "name": "civilianReg",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 202,
+                      "src": "781:11:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_civilianDetails_$198_storage_$",
+                        "typeString": "mapping(uint256 => struct Civilians.civilianDetails storage ref)"
+                      }
+                    },
+                    "id": 253,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 252,
+                      "name": "_number",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 234,
+                      "src": "793:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "781:20:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_civilianDetails_$198_storage",
+                      "typeString": "struct Civilians.civilianDetails storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "753:48:1"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "components": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 255,
+                          "name": "cd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 250,
+                          "src": "819:2:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_civilianDetails_$198_memory_ptr",
+                            "typeString": "struct Civilians.civilianDetails memory"
+                          }
+                        },
+                        "id": 256,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "civilianNo",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 187,
+                        "src": "819:13:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 257,
+                          "name": "cd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 250,
+                          "src": "833:2:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_civilianDetails_$198_memory_ptr",
+                            "typeString": "struct Civilians.civilianDetails memory"
+                          }
+                        },
+                        "id": 258,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "name",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 189,
+                        "src": "833:7:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 259,
+                          "name": "cd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 250,
+                          "src": "841:2:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_civilianDetails_$198_memory_ptr",
+                            "typeString": "struct Civilians.civilianDetails memory"
+                          }
+                        },
+                        "id": 260,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "id",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 191,
+                        "src": "841:5:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_idType_$185",
+                          "typeString": "enum Civilians.idType"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 261,
+                          "name": "cd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 250,
+                          "src": "847:2:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_civilianDetails_$198_memory_ptr",
+                            "typeString": "struct Civilians.civilianDetails memory"
+                          }
+                        },
+                        "id": 262,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "idNumber",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 193,
+                        "src": "847:11:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 263,
+                          "name": "cd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 250,
+                          "src": "859:2:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_civilianDetails_$198_memory_ptr",
+                            "typeString": "struct Civilians.civilianDetails memory"
+                          }
+                        },
+                        "id": 264,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "age",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 195,
+                        "src": "859:6:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 265,
+                          "name": "cd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 250,
+                          "src": "866:2:1",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_civilianDetails_$198_memory_ptr",
+                            "typeString": "struct Civilians.civilianDetails memory"
+                          }
+                        },
+                        "id": 266,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "pics",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 197,
+                        "src": "866:7:1",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "id": 267,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "818:56:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_uint256_$_t_string_memory_$_t_enum$_idType_$185_$_t_string_memory_$_t_uint256_$_t_string_memory_$",
+                      "typeString": "tuple(uint256,string memory,enum Civilians.idType,string memory,uint256,string memory)"
+                    }
+                  },
+                  "functionReturnParameters": 248,
+                  "id": 268,
+                  "nodeType": "Return",
+                  "src": "811:63:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 270,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCivilian",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 235,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 234,
+                  "name": "_number",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 270,
+                  "src": "651:12:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 233,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "651:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "650:14:1"
+            },
+            "returnParameters": {
+              "id": 248,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 237,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 270,
+                  "src": "684:4:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 236,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "684:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 239,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 270,
+                  "src": "689:13:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 238,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "689:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 241,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 270,
+                  "src": "703:6:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_idType_$185",
+                    "typeString": "enum Civilians.idType"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 240,
+                    "name": "idType",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 185,
+                    "src": "703:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_idType_$185",
+                      "typeString": "enum Civilians.idType"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 243,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 270,
+                  "src": "710:13:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 242,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "710:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 245,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 270,
+                  "src": "724:4:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 244,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "724:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 247,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 270,
+                  "src": "729:13:1",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 246,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "729:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "683:60:1"
+            },
+            "scope": 271,
+            "src": "630:251:1",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 272,
+        "src": "25:868:1"
+      }
+    ],
+    "src": "0:893:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.1+commit.c8a2cb62.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.9",
+  "updatedAt": "2019-05-29T11:41:11.857Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

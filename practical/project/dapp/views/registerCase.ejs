@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Police station</title>
+</head>
+<body>
+    <h2> Register a Case</h2>
+    <form action="/case/register" method="post">
+        <p>Name : <input type="text" name="name"> </p>
+        <p>Case Type: <select name="caseCategory" id="">
+                <% for(i=0;i<caseCatogory.length;i++){%>
+                        <option value="<%=i%>"><%=caseCatogory[i]%></option>
+                    <% }%>
+        </select> </p>
+
+        <p>Petitioner: <select multiple name="petitioner" id="">
+                <% for(i=0;i<civilianData.length;i++){%>
+                        <option value="<%=i%>"><%=civilianData[i][1]%></option>
+                    <% }%>
+        </select> </p>
+
+        <p>Accused: <select multiple name="accused" id="">
+                <% for(i=0;i<civilianData.length;i++){%>
+                        <option value="<%=i%>"><%=civilianData[i][1]%></option>
+                    <% }%>
+        </select> </p>
+
+        <p>Investigating Officer: <select name="officer" id="">
+                <% for(i=0;i<officerData.length;i++){%>
+                        <option value="<%=i%>"><%=officerData[i][1]%> - <%=officerRank[officerData[i][2]]%></option>
+                    <% }%>
+        </select> </p>
+
+        <p>Court: <select name="court" id="">
+                <% for(i=0;i<courtData.length;i++){%>
+                        <option value="<%=i%>"><%=courtData[i][1]%></option>
+                    <% }%>
+        </select> </p>
+
+        <p>FIR : <textarea name="fir" style="width: 550px; height: 200px;"></textarea></p>
+            <button type="submit">Register</button></p> 
+    </form>
+</body>
+</html>

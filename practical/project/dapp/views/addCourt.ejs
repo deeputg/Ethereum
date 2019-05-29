@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Police station</title>
+</head>
+<body>
+    <h2> Enter new Court</h2>
+    <form action="/policestation/add-court" method="post">
+        <p>Name : <input type="text" name="name"> </p>
+        <p>Court type : <select name="courtType" id="">
+                <% for(i=0;i<courtType.length;i++){%>
+                        <option value="<%=i%>"><%=courtType[i]%></option>
+                    <% }%>
+        </select> </p>
+
+        <p>Court hierarchi : <select name="hierarchi" id="">
+            <% for(i=0;i<courtHierarchi.length;i++){%>
+                <option value="<%=i%>"><%=courtHierarchi[i]%></option>
+            <% }%>
+        </select> </p>
+        <p>Judge Name : <input type="text" name="judgeName"> </p>
+            <button type="submit">Register</button></p> 
+    </form>
+</body>
+</html>

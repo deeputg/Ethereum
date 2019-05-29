@@ -7,16 +7,14 @@
     <title>Add Police station</title>
 </head>
 <body>
-    <h2> Enter a Civilian</h2>
-    <form action="/public/add-civilian" method="post">
+    <h2> Add Officer</h2>
+    <form action="/policestation/add-officer" method="post">
         <p>Name : <input type="text" name="name"> </p>
-        <p>ID type : <select name="idType" id="">
-                <% for(i=0;i<idCardType.length;i++){%>
-                        <option value="<%=i%>"><%=idCardType[i]%></option>
+        <p>Rank : <select name="rank" id="">
+                <% for(i=0;i<officerRank.length;i++){%>
+                        <option value="<%=i%>"><%=officerRank[i]%></option>
                     <% }%>
         </select> </p>
-        <p>ID No : <input type="text" name="idNo"> </p>
-        <p>age : <input type="text" name="age"> </p>
             <button type="submit">Register</button></p> 
     </form>
 </body>

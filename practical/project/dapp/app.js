@@ -15,6 +15,7 @@ var loginRouter = require('./routes/login');
 var logoutRouter = require('./routes/logout');
 var publicRouter = require("./routes/public");
 var policeStationRouter = require("./routes/policestation")
+var caseRouter = require("./routes/case");
 
 Web3 = require('web3')
 MyContractJSON = require("../build/contracts/CaseRegister.json");
@@ -28,8 +29,14 @@ web3.eth.getAccounts().then(accounts=>{
   console.log(ownerAddr);
 });
 
-
 CaseReg = new web3.eth.Contract(abi,contractAddress);
+
+courtType = ["Civil Court","Criminal Court"]
+courtHierarchi = ["TCMC","SCMC","FCMC","District Court","District Family Court","Collector","Board of Revenue","High Court","Supreme Cort"]
+officerRank = ["Police Constable","Head Constable","Asst. Sub Inspector","Sub Inspector","Circle Inspector","DSP","SP","DIG","IG","ADGP","DGP","DGP - chief"]
+idCardType = ["Voter Id Card","Adhar Card","Drivering Licence"]
+caseCatogory=["Criminal","Petty","Civil"]
+
 
 var app = express();
 
@@ -48,7 +55,8 @@ app.use('/', indexRouter);
 app.use('/login', loginRouter);
 app.use("/policestation",policeStationRouter);
 app.use('/logout',logoutRouter);
-app.use('/public',publicRouter)
+app.use('/public',publicRouter);
+app.use("/case",caseRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

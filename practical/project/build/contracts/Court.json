@@ -1,0 +1,2408 @@
+{
+  "contractName": "Court",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "courtId",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_name",
+          "type": "string"
+        },
+        {
+          "name": "_court_type",
+          "type": "uint8"
+        },
+        {
+          "name": "_court_hierarchi",
+          "type": "uint8"
+        },
+        {
+          "name": "_judgeName",
+          "type": "string"
+        }
+      ],
+      "name": "addCourt",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_number",
+          "type": "uint256"
+        }
+      ],
+      "name": "getCourtDetails",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "string"
+        },
+        {
+          "name": "",
+          "type": "uint8"
+        },
+        {
+          "name": "",
+          "type": "uint8"
+        },
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.1+commit.c8a2cb62\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"courtId\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_name\",\"type\":\"string\"},{\"name\":\"_court_type\",\"type\":\"uint8\"},{\"name\":\"_court_hierarchi\",\"type\":\"uint8\"},{\"name\":\"_judgeName\",\"type\":\"string\"}],\"name\":\"addCourt\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_number\",\"type\":\"uint256\"}],\"name\":\"getCourtDetails\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"},{\"name\":\"\",\"type\":\"string\"},{\"name\":\"\",\"type\":\"uint8\"},{\"name\":\"\",\"type\":\"uint8\"},{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/deepu/Deepu/CED program/practical/project/contracts/Court.sol\":\"Court\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/deepu/Deepu/CED program/practical/project/contracts/Court.sol\":{\"keccak256\":\"0x96e680d284d98a47fa51aa0f598c313bd263706b03ce8f1958fec52f640649f7\",\"urls\":[\"bzzr://b4cefbb09e544e346040fcb76a065e84c3bf5990ce9323d8c3d30f18c31a8434\"]}},\"version\":1}",
+  "bytecode": "0x60806040526000805534801561001457600080fd5b50610779806100246000396000f3fe608060405260043610610051576000357c010000000000000000000000000000000000000000000000000000000090048063774ea7831461005657806389a3c77414610081578063e8c84300146101fa575b600080fd5b34801561006257600080fd5b5061006b61034b565b6040518082815260200191505060405180910390f35b34801561008d57600080fd5b506101f8600480360360808110156100a457600080fd5b81019080803590602001906401000000008111156100c157600080fd5b8201836020820111156100d357600080fd5b803590602001918460018302840111640100000000831117156100f557600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290803560ff169060200190929190803560ff1690602001909291908035906020019064010000000081111561017257600080fd5b82018360208201111561018457600080fd5b803590602001918460018302840111640100000000831117156101a657600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610351565b005b34801561020657600080fd5b506102336004803603602081101561021d57600080fd5b8101908080359060200190929190505050610455565b604051808681526020018060200185600181111561024d57fe5b60ff16815260200184600881111561026157fe5b60ff16815260200180602001838103835287818151815260200191508051906020019080838360005b838110156102a557808201518184015260208101905061028a565b50505050905090810190601f1680156102d25780820380516001836020036101000a031916815260200191505b50838103825284818151815260200191508051906020019080838360005b8381101561030b5780820151818401526020810190506102f0565b50505050905090810190601f1680156103385780820380516001836020036101000a031916815260200191505b5097505050505050505060405180910390f35b60005481565b60a060405190810160405280600054815260200185815260200184600181111561037757fe5b815260200183600881111561038857fe5b81526020018281525060016000805481526020019081526020016000206000820151816000015560208201518160010190805190602001906103cb929190610662565b5060408201518160020160006101000a81548160ff021916908360018111156103f057fe5b021790555060608201518160020160016101000a81548160ff0219169083600881111561041957fe5b0217905550608082015181600301908051906020019061043a929190610662565b50905050600080815480929190600101919050555050505050565b6000606060008060606104666106e2565b6001600088815260200190815260200160002060a0604051908101604052908160008201548152602001600182018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105285780601f106104fd57610100808354040283529160200191610528565b820191906000526020600020905b81548152906001019060200180831161050b57829003601f168201915b505050505081526020016002820160009054906101000a900460ff16600181111561054f57fe5b600181111561055a57fe5b81526020016002820160019054906101000a900460ff16600881111561057c57fe5b600881111561058757fe5b8152602001600382018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156106245780601f106105f957610100808354040283529160200191610624565b820191906000526020600020905b81548152906001019060200180831161060757829003601f168201915b505050505081525050905080600001518160200151826040015183606001518460800151839350809050955095509550955095505091939590929450565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106106a357805160ff19168380011785556106d1565b828001600101855582156106d1579182015b828111156106d05782518255916020019190600101906106b5565b5b5090506106de9190610728565b5090565b60a06040519081016040528060008152602001606081526020016000600181111561070957fe5b81526020016000600881111561071b57fe5b8152602001606081525090565b61074a91905b8082111561074657600081600090555060010161072e565b5090565b9056fea165627a7a723058200816fa6b57c262df4255d2da4462f9e644e7d76c6c580174d177ef0b3726f25c0029",
+  "deployedBytecode": "0x608060405260043610610051576000357c010000000000000000000000000000000000000000000000000000000090048063774ea7831461005657806389a3c77414610081578063e8c84300146101fa575b600080fd5b34801561006257600080fd5b5061006b61034b565b6040518082815260200191505060405180910390f35b34801561008d57600080fd5b506101f8600480360360808110156100a457600080fd5b81019080803590602001906401000000008111156100c157600080fd5b8201836020820111156100d357600080fd5b803590602001918460018302840111640100000000831117156100f557600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290803560ff169060200190929190803560ff1690602001909291908035906020019064010000000081111561017257600080fd5b82018360208201111561018457600080fd5b803590602001918460018302840111640100000000831117156101a657600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610351565b005b34801561020657600080fd5b506102336004803603602081101561021d57600080fd5b8101908080359060200190929190505050610455565b604051808681526020018060200185600181111561024d57fe5b60ff16815260200184600881111561026157fe5b60ff16815260200180602001838103835287818151815260200191508051906020019080838360005b838110156102a557808201518184015260208101905061028a565b50505050905090810190601f1680156102d25780820380516001836020036101000a031916815260200191505b50838103825284818151815260200191508051906020019080838360005b8381101561030b5780820151818401526020810190506102f0565b50505050905090810190601f1680156103385780820380516001836020036101000a031916815260200191505b5097505050505050505060405180910390f35b60005481565b60a060405190810160405280600054815260200185815260200184600181111561037757fe5b815260200183600881111561038857fe5b81526020018281525060016000805481526020019081526020016000206000820151816000015560208201518160010190805190602001906103cb929190610662565b5060408201518160020160006101000a81548160ff021916908360018111156103f057fe5b021790555060608201518160020160016101000a81548160ff0219169083600881111561041957fe5b0217905550608082015181600301908051906020019061043a929190610662565b50905050600080815480929190600101919050555050505050565b6000606060008060606104666106e2565b6001600088815260200190815260200160002060a0604051908101604052908160008201548152602001600182018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156105285780601f106104fd57610100808354040283529160200191610528565b820191906000526020600020905b81548152906001019060200180831161050b57829003601f168201915b505050505081526020016002820160009054906101000a900460ff16600181111561054f57fe5b600181111561055a57fe5b81526020016002820160019054906101000a900460ff16600881111561057c57fe5b600881111561058757fe5b8152602001600382018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156106245780601f106105f957610100808354040283529160200191610624565b820191906000526020600020905b81548152906001019060200180831161060757829003601f168201915b505050505081525050905080600001518160200151826040015183606001518460800151839350809050955095509550955095505091939590929450565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106106a357805160ff19168380011785556106d1565b828001600101855582156106d1579182015b828111156106d05782518255916020019190600101906106b5565b5b5090506106de9190610728565b5090565b60a06040519081016040528060008152602001606081526020016000600181111561070957fe5b81526020016000600881111561071b57fe5b8152602001606081525090565b61074a91905b8082111561074657600081600090555060010161072e565b5090565b9056fea165627a7a723058200816fa6b57c262df4255d2da4462f9e644e7d76c6c580174d177ef0b3726f25c0029",
+  "sourceMap": "25:927:2:-;;;67:1;45:23;;25:927;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:927:2;;;;;;;",
+  "deployedSourceMap": "25:927:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;45:23;;8:9:-1;5:2;;;30:1;27;20:12;5:2;45:23:2;;;:::i;:::-;;;;;;;;;;;;;;;;;;;446:241;;8:9:-1;5:2;;;30:1;27;20:12;5:2;446:241:2;;;;;;13:3:-1;8;5:12;2:2;;;30:1;27;20:12;2:2;446:241:2;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;446:241:2;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;446:241:2;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;446:241:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;446:241:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;446:241:2;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;446:241:2;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;446:241:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;446:241:2;;;;;;;;;;;;;;;:::i;:::-;;697:253;;8:9:-1;5:2;;;30:1;27;20:12;5:2;697:253:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;697:253:2;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;697:253:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;697:253:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;45:23;;;;:::o;446:241::-;594:67;;;;;;;;;607:7;;594:67;;;;615:5;594:67;;;;621:11;594:67;;;;;;;;;;;;633:16;594:67;;;;;;;;;;;;650:10;594:67;;;576:8;:17;585:7;;576:17;;;;;;;;;;;:85;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;671:7;;:9;;;;;;;;;;;;;446:241;;;;:::o;697:253::-;755:4;760:13;774:9;784;794:13;818:22;;:::i;:::-;843:8;:17;852:7;843:17;;;;;;;;;;;818:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;878:2;:10;;;889:2;:7;;;897:2;:13;;;911:2;:18;;;930:2;:12;;;870:73;;;;;;;;;;;;;;;;;697:253;;;;;;;:::o;25:927::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\n\ncontract Court{\n    uint public courtId = 0;\n    enum courtType{civil,criminal}\n    enum hierarchi{TCMC,SCMC,FCMC,DistricCourt,DistrictFamilyCourt,Collector,BoardOfRevenue,HighCourt,SupremeCourt}\n   \n    struct courtDetails{\n        uint courtId;\n        string name;\n        courtType court_type;\n        hierarchi court_hierarchi;\n        string judgeName;\n    }\n    \n    mapping(uint=>courtDetails) courtReg;\n    \n    function addCourt(string memory _name,courtType _court_type,hierarchi _court_hierarchi,string memory _judgeName) public {\n        courtReg[courtId]=courtDetails(courtId,_name,_court_type,_court_hierarchi,_judgeName);\n        courtId++;\n    }\n    \n    function getCourtDetails(uint _number)public view returns(uint,string memory,courtType,hierarchi,string memory){\n        courtDetails memory cd = courtReg[_number];\n        return (cd.courtId,cd.name,cd.court_type,cd.court_hierarchi,cd.judgeName);\n    }\n}",
+  "sourcePath": "/home/deepu/Deepu/CED program/practical/project/contracts/Court.sol",
+  "ast": {
+    "absolutePath": "/home/deepu/Deepu/CED program/practical/project/contracts/Court.sol",
+    "exportedSymbols": {
+      "Court": [
+        366
+      ]
+    },
+    "id": 367,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 273,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 366,
+        "linearizedBaseContracts": [
+          366
+        ],
+        "name": "Court",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 276,
+            "name": "courtId",
+            "nodeType": "VariableDeclaration",
+            "scope": 366,
+            "src": "45:23:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 274,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "45:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 275,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "67:1:2",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Court.courtType",
+            "id": 279,
+            "members": [
+              {
+                "id": 277,
+                "name": "civil",
+                "nodeType": "EnumValue",
+                "src": "89:5:2"
+              },
+              {
+                "id": 278,
+                "name": "criminal",
+                "nodeType": "EnumValue",
+                "src": "95:8:2"
+              }
+            ],
+            "name": "courtType",
+            "nodeType": "EnumDefinition",
+            "src": "74:30:2"
+          },
+          {
+            "canonicalName": "Court.hierarchi",
+            "id": 289,
+            "members": [
+              {
+                "id": 280,
+                "name": "TCMC",
+                "nodeType": "EnumValue",
+                "src": "124:4:2"
+              },
+              {
+                "id": 281,
+                "name": "SCMC",
+                "nodeType": "EnumValue",
+                "src": "129:4:2"
+              },
+              {
+                "id": 282,
+                "name": "FCMC",
+                "nodeType": "EnumValue",
+                "src": "134:4:2"
+              },
+              {
+                "id": 283,
+                "name": "DistricCourt",
+                "nodeType": "EnumValue",
+                "src": "139:12:2"
+              },
+              {
+                "id": 284,
+                "name": "DistrictFamilyCourt",
+                "nodeType": "EnumValue",
+                "src": "152:19:2"
+              },
+              {
+                "id": 285,
+                "name": "Collector",
+                "nodeType": "EnumValue",
+                "src": "172:9:2"
+              },
+              {
+                "id": 286,
+                "name": "BoardOfRevenue",
+                "nodeType": "EnumValue",
+                "src": "182:14:2"
+              },
+              {
+                "id": 287,
+                "name": "HighCourt",
+                "nodeType": "EnumValue",
+                "src": "197:9:2"
+              },
+              {
+                "id": 288,
+                "name": "SupremeCourt",
+                "nodeType": "EnumValue",
+                "src": "207:12:2"
+              }
+            ],
+            "name": "hierarchi",
+            "nodeType": "EnumDefinition",
+            "src": "109:111:2"
+          },
+          {
+            "canonicalName": "Court.courtDetails",
+            "id": 300,
+            "members": [
+              {
+                "constant": false,
+                "id": 291,
+                "name": "courtId",
+                "nodeType": "VariableDeclaration",
+                "scope": 300,
+                "src": "258:12:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 290,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "258:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 293,
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 300,
+                "src": "280:11:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 292,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "280:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 295,
+                "name": "court_type",
+                "nodeType": "VariableDeclaration",
+                "scope": 300,
+                "src": "301:20:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_courtType_$279",
+                  "typeString": "enum Court.courtType"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 294,
+                  "name": "courtType",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 279,
+                  "src": "301:9:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_courtType_$279",
+                    "typeString": "enum Court.courtType"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 297,
+                "name": "court_hierarchi",
+                "nodeType": "VariableDeclaration",
+                "scope": 300,
+                "src": "331:25:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_hierarchi_$289",
+                  "typeString": "enum Court.hierarchi"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 296,
+                  "name": "hierarchi",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 289,
+                  "src": "331:9:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_hierarchi_$289",
+                    "typeString": "enum Court.hierarchi"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 299,
+                "name": "judgeName",
+                "nodeType": "VariableDeclaration",
+                "scope": 300,
+                "src": "366:16:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 298,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "366:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "courtDetails",
+            "nodeType": "StructDefinition",
+            "scope": 366,
+            "src": "229:160:2",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 304,
+            "name": "courtReg",
+            "nodeType": "VariableDeclaration",
+            "scope": 366,
+            "src": "399:36:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_courtDetails_$300_storage_$",
+              "typeString": "mapping(uint256 => struct Court.courtDetails)"
+            },
+            "typeName": {
+              "id": 303,
+              "keyType": {
+                "id": 301,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "407:4:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "399:27:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_courtDetails_$300_storage_$",
+                "typeString": "mapping(uint256 => struct Court.courtDetails)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 302,
+                "name": "courtDetails",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 300,
+                "src": "413:12:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_courtDetails_$300_storage_ptr",
+                  "typeString": "struct Court.courtDetails"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 330,
+              "nodeType": "Block",
+              "src": "566:121:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 325,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 315,
+                        "name": "courtReg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 304,
+                        "src": "576:8:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_courtDetails_$300_storage_$",
+                          "typeString": "mapping(uint256 => struct Court.courtDetails storage ref)"
+                        }
+                      },
+                      "id": 317,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 316,
+                        "name": "courtId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 276,
+                        "src": "585:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "576:17:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_courtDetails_$300_storage",
+                        "typeString": "struct Court.courtDetails storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 319,
+                          "name": "courtId",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 276,
+                          "src": "607:7:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 320,
+                          "name": "_name",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 306,
+                          "src": "615:5:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 321,
+                          "name": "_court_type",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 308,
+                          "src": "621:11:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_courtType_$279",
+                            "typeString": "enum Court.courtType"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 322,
+                          "name": "_court_hierarchi",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 310,
+                          "src": "633:16:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_hierarchi_$289",
+                            "typeString": "enum Court.hierarchi"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 323,
+                          "name": "_judgeName",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 312,
+                          "src": "650:10:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_enum$_courtType_$279",
+                            "typeString": "enum Court.courtType"
+                          },
+                          {
+                            "typeIdentifier": "t_enum$_hierarchi_$289",
+                            "typeString": "enum Court.hierarchi"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        ],
+                        "id": 318,
+                        "name": "courtDetails",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 300,
+                        "src": "594:12:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_courtDetails_$300_storage_ptr_$",
+                          "typeString": "type(struct Court.courtDetails storage pointer)"
+                        }
+                      },
+                      "id": 324,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "594:67:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_courtDetails_$300_memory",
+                        "typeString": "struct Court.courtDetails memory"
+                      }
+                    },
+                    "src": "576:85:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_courtDetails_$300_storage",
+                      "typeString": "struct Court.courtDetails storage ref"
+                    }
+                  },
+                  "id": 326,
+                  "nodeType": "ExpressionStatement",
+                  "src": "576:85:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 328,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "671:9:2",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 327,
+                      "name": "courtId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 276,
+                      "src": "671:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 329,
+                  "nodeType": "ExpressionStatement",
+                  "src": "671:9:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 331,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addCourt",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 313,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 306,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 331,
+                  "src": "464:19:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 305,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "464:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 308,
+                  "name": "_court_type",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 331,
+                  "src": "484:21:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_courtType_$279",
+                    "typeString": "enum Court.courtType"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 307,
+                    "name": "courtType",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 279,
+                    "src": "484:9:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_courtType_$279",
+                      "typeString": "enum Court.courtType"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 310,
+                  "name": "_court_hierarchi",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 331,
+                  "src": "506:26:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_hierarchi_$289",
+                    "typeString": "enum Court.hierarchi"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 309,
+                    "name": "hierarchi",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 289,
+                    "src": "506:9:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_hierarchi_$289",
+                      "typeString": "enum Court.hierarchi"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 312,
+                  "name": "_judgeName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 331,
+                  "src": "533:24:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 311,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "533:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "463:95:2"
+            },
+            "returnParameters": {
+              "id": 314,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "566:0:2"
+            },
+            "scope": 366,
+            "src": "446:241:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 364,
+              "nodeType": "Block",
+              "src": "808:142:2",
+              "statements": [
+                {
+                  "assignments": [
+                    347
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 347,
+                      "name": "cd",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 364,
+                      "src": "818:22:2",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_courtDetails_$300_memory_ptr",
+                        "typeString": "struct Court.courtDetails"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 346,
+                        "name": "courtDetails",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 300,
+                        "src": "818:12:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_courtDetails_$300_storage_ptr",
+                          "typeString": "struct Court.courtDetails"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 351,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 348,
+                      "name": "courtReg",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 304,
+                      "src": "843:8:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_courtDetails_$300_storage_$",
+                        "typeString": "mapping(uint256 => struct Court.courtDetails storage ref)"
+                      }
+                    },
+                    "id": 350,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 349,
+                      "name": "_number",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 333,
+                      "src": "852:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "843:17:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_courtDetails_$300_storage",
+                      "typeString": "struct Court.courtDetails storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "818:42:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "components": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 352,
+                          "name": "cd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 347,
+                          "src": "878:2:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_courtDetails_$300_memory_ptr",
+                            "typeString": "struct Court.courtDetails memory"
+                          }
+                        },
+                        "id": 353,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "courtId",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 291,
+                        "src": "878:10:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 354,
+                          "name": "cd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 347,
+                          "src": "889:2:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_courtDetails_$300_memory_ptr",
+                            "typeString": "struct Court.courtDetails memory"
+                          }
+                        },
+                        "id": 355,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "name",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 293,
+                        "src": "889:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 356,
+                          "name": "cd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 347,
+                          "src": "897:2:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_courtDetails_$300_memory_ptr",
+                            "typeString": "struct Court.courtDetails memory"
+                          }
+                        },
+                        "id": 357,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "court_type",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 295,
+                        "src": "897:13:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_courtType_$279",
+                          "typeString": "enum Court.courtType"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 358,
+                          "name": "cd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 347,
+                          "src": "911:2:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_courtDetails_$300_memory_ptr",
+                            "typeString": "struct Court.courtDetails memory"
+                          }
+                        },
+                        "id": 359,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "court_hierarchi",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 297,
+                        "src": "911:18:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_hierarchi_$289",
+                          "typeString": "enum Court.hierarchi"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 360,
+                          "name": "cd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 347,
+                          "src": "930:2:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_courtDetails_$300_memory_ptr",
+                            "typeString": "struct Court.courtDetails memory"
+                          }
+                        },
+                        "id": 361,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "judgeName",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 299,
+                        "src": "930:12:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "id": 362,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "877:66:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_uint256_$_t_string_memory_$_t_enum$_courtType_$279_$_t_enum$_hierarchi_$289_$_t_string_memory_$",
+                      "typeString": "tuple(uint256,string memory,enum Court.courtType,enum Court.hierarchi,string memory)"
+                    }
+                  },
+                  "functionReturnParameters": 345,
+                  "id": 363,
+                  "nodeType": "Return",
+                  "src": "870:73:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 365,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCourtDetails",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 334,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 333,
+                  "name": "_number",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 365,
+                  "src": "722:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 332,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "722:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "721:14:2"
+            },
+            "returnParameters": {
+              "id": 345,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 336,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 365,
+                  "src": "755:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 335,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "755:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 338,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 365,
+                  "src": "760:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 337,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "760:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 340,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 365,
+                  "src": "774:9:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_courtType_$279",
+                    "typeString": "enum Court.courtType"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 339,
+                    "name": "courtType",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 279,
+                    "src": "774:9:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_courtType_$279",
+                      "typeString": "enum Court.courtType"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 342,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 365,
+                  "src": "784:9:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_hierarchi_$289",
+                    "typeString": "enum Court.hierarchi"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 341,
+                    "name": "hierarchi",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 289,
+                    "src": "784:9:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_hierarchi_$289",
+                      "typeString": "enum Court.hierarchi"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 344,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 365,
+                  "src": "794:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 343,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "794:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "754:54:2"
+            },
+            "scope": 366,
+            "src": "697:253:2",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 367,
+        "src": "25:927:2"
+      }
+    ],
+    "src": "0:952:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/deepu/Deepu/CED program/practical/project/contracts/Court.sol",
+    "exportedSymbols": {
+      "Court": [
+        366
+      ]
+    },
+    "id": 367,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 273,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 366,
+        "linearizedBaseContracts": [
+          366
+        ],
+        "name": "Court",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 276,
+            "name": "courtId",
+            "nodeType": "VariableDeclaration",
+            "scope": 366,
+            "src": "45:23:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 274,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "45:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 275,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "67:1:2",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "Court.courtType",
+            "id": 279,
+            "members": [
+              {
+                "id": 277,
+                "name": "civil",
+                "nodeType": "EnumValue",
+                "src": "89:5:2"
+              },
+              {
+                "id": 278,
+                "name": "criminal",
+                "nodeType": "EnumValue",
+                "src": "95:8:2"
+              }
+            ],
+            "name": "courtType",
+            "nodeType": "EnumDefinition",
+            "src": "74:30:2"
+          },
+          {
+            "canonicalName": "Court.hierarchi",
+            "id": 289,
+            "members": [
+              {
+                "id": 280,
+                "name": "TCMC",
+                "nodeType": "EnumValue",
+                "src": "124:4:2"
+              },
+              {
+                "id": 281,
+                "name": "SCMC",
+                "nodeType": "EnumValue",
+                "src": "129:4:2"
+              },
+              {
+                "id": 282,
+                "name": "FCMC",
+                "nodeType": "EnumValue",
+                "src": "134:4:2"
+              },
+              {
+                "id": 283,
+                "name": "DistricCourt",
+                "nodeType": "EnumValue",
+                "src": "139:12:2"
+              },
+              {
+                "id": 284,
+                "name": "DistrictFamilyCourt",
+                "nodeType": "EnumValue",
+                "src": "152:19:2"
+              },
+              {
+                "id": 285,
+                "name": "Collector",
+                "nodeType": "EnumValue",
+                "src": "172:9:2"
+              },
+              {
+                "id": 286,
+                "name": "BoardOfRevenue",
+                "nodeType": "EnumValue",
+                "src": "182:14:2"
+              },
+              {
+                "id": 287,
+                "name": "HighCourt",
+                "nodeType": "EnumValue",
+                "src": "197:9:2"
+              },
+              {
+                "id": 288,
+                "name": "SupremeCourt",
+                "nodeType": "EnumValue",
+                "src": "207:12:2"
+              }
+            ],
+            "name": "hierarchi",
+            "nodeType": "EnumDefinition",
+            "src": "109:111:2"
+          },
+          {
+            "canonicalName": "Court.courtDetails",
+            "id": 300,
+            "members": [
+              {
+                "constant": false,
+                "id": 291,
+                "name": "courtId",
+                "nodeType": "VariableDeclaration",
+                "scope": 300,
+                "src": "258:12:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 290,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "258:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 293,
+                "name": "name",
+                "nodeType": "VariableDeclaration",
+                "scope": 300,
+                "src": "280:11:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 292,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "280:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 295,
+                "name": "court_type",
+                "nodeType": "VariableDeclaration",
+                "scope": 300,
+                "src": "301:20:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_courtType_$279",
+                  "typeString": "enum Court.courtType"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 294,
+                  "name": "courtType",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 279,
+                  "src": "301:9:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_courtType_$279",
+                    "typeString": "enum Court.courtType"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 297,
+                "name": "court_hierarchi",
+                "nodeType": "VariableDeclaration",
+                "scope": 300,
+                "src": "331:25:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_hierarchi_$289",
+                  "typeString": "enum Court.hierarchi"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 296,
+                  "name": "hierarchi",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 289,
+                  "src": "331:9:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_hierarchi_$289",
+                    "typeString": "enum Court.hierarchi"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 299,
+                "name": "judgeName",
+                "nodeType": "VariableDeclaration",
+                "scope": 300,
+                "src": "366:16:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 298,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "366:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "courtDetails",
+            "nodeType": "StructDefinition",
+            "scope": 366,
+            "src": "229:160:2",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 304,
+            "name": "courtReg",
+            "nodeType": "VariableDeclaration",
+            "scope": 366,
+            "src": "399:36:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_courtDetails_$300_storage_$",
+              "typeString": "mapping(uint256 => struct Court.courtDetails)"
+            },
+            "typeName": {
+              "id": 303,
+              "keyType": {
+                "id": 301,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "407:4:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "399:27:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_courtDetails_$300_storage_$",
+                "typeString": "mapping(uint256 => struct Court.courtDetails)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 302,
+                "name": "courtDetails",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 300,
+                "src": "413:12:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_courtDetails_$300_storage_ptr",
+                  "typeString": "struct Court.courtDetails"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 330,
+              "nodeType": "Block",
+              "src": "566:121:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 325,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 315,
+                        "name": "courtReg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 304,
+                        "src": "576:8:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_courtDetails_$300_storage_$",
+                          "typeString": "mapping(uint256 => struct Court.courtDetails storage ref)"
+                        }
+                      },
+                      "id": 317,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 316,
+                        "name": "courtId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 276,
+                        "src": "585:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "576:17:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_courtDetails_$300_storage",
+                        "typeString": "struct Court.courtDetails storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 319,
+                          "name": "courtId",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 276,
+                          "src": "607:7:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 320,
+                          "name": "_name",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 306,
+                          "src": "615:5:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 321,
+                          "name": "_court_type",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 308,
+                          "src": "621:11:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_courtType_$279",
+                            "typeString": "enum Court.courtType"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 322,
+                          "name": "_court_hierarchi",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 310,
+                          "src": "633:16:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_hierarchi_$289",
+                            "typeString": "enum Court.hierarchi"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 323,
+                          "name": "_judgeName",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 312,
+                          "src": "650:10:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_enum$_courtType_$279",
+                            "typeString": "enum Court.courtType"
+                          },
+                          {
+                            "typeIdentifier": "t_enum$_hierarchi_$289",
+                            "typeString": "enum Court.hierarchi"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        ],
+                        "id": 318,
+                        "name": "courtDetails",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 300,
+                        "src": "594:12:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_courtDetails_$300_storage_ptr_$",
+                          "typeString": "type(struct Court.courtDetails storage pointer)"
+                        }
+                      },
+                      "id": 324,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "594:67:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_courtDetails_$300_memory",
+                        "typeString": "struct Court.courtDetails memory"
+                      }
+                    },
+                    "src": "576:85:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_courtDetails_$300_storage",
+                      "typeString": "struct Court.courtDetails storage ref"
+                    }
+                  },
+                  "id": 326,
+                  "nodeType": "ExpressionStatement",
+                  "src": "576:85:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 328,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "671:9:2",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 327,
+                      "name": "courtId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 276,
+                      "src": "671:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 329,
+                  "nodeType": "ExpressionStatement",
+                  "src": "671:9:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 331,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addCourt",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 313,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 306,
+                  "name": "_name",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 331,
+                  "src": "464:19:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 305,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "464:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 308,
+                  "name": "_court_type",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 331,
+                  "src": "484:21:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_courtType_$279",
+                    "typeString": "enum Court.courtType"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 307,
+                    "name": "courtType",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 279,
+                    "src": "484:9:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_courtType_$279",
+                      "typeString": "enum Court.courtType"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 310,
+                  "name": "_court_hierarchi",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 331,
+                  "src": "506:26:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_hierarchi_$289",
+                    "typeString": "enum Court.hierarchi"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 309,
+                    "name": "hierarchi",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 289,
+                    "src": "506:9:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_hierarchi_$289",
+                      "typeString": "enum Court.hierarchi"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 312,
+                  "name": "_judgeName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 331,
+                  "src": "533:24:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 311,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "533:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "463:95:2"
+            },
+            "returnParameters": {
+              "id": 314,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "566:0:2"
+            },
+            "scope": 366,
+            "src": "446:241:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 364,
+              "nodeType": "Block",
+              "src": "808:142:2",
+              "statements": [
+                {
+                  "assignments": [
+                    347
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 347,
+                      "name": "cd",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 364,
+                      "src": "818:22:2",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_courtDetails_$300_memory_ptr",
+                        "typeString": "struct Court.courtDetails"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 346,
+                        "name": "courtDetails",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 300,
+                        "src": "818:12:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_courtDetails_$300_storage_ptr",
+                          "typeString": "struct Court.courtDetails"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 351,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 348,
+                      "name": "courtReg",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 304,
+                      "src": "843:8:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_courtDetails_$300_storage_$",
+                        "typeString": "mapping(uint256 => struct Court.courtDetails storage ref)"
+                      }
+                    },
+                    "id": 350,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 349,
+                      "name": "_number",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 333,
+                      "src": "852:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "843:17:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_courtDetails_$300_storage",
+                      "typeString": "struct Court.courtDetails storage ref"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "818:42:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "components": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 352,
+                          "name": "cd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 347,
+                          "src": "878:2:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_courtDetails_$300_memory_ptr",
+                            "typeString": "struct Court.courtDetails memory"
+                          }
+                        },
+                        "id": 353,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "courtId",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 291,
+                        "src": "878:10:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 354,
+                          "name": "cd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 347,
+                          "src": "889:2:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_courtDetails_$300_memory_ptr",
+                            "typeString": "struct Court.courtDetails memory"
+                          }
+                        },
+                        "id": 355,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "name",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 293,
+                        "src": "889:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory",
+                          "typeString": "string memory"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 356,
+                          "name": "cd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 347,
+                          "src": "897:2:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_courtDetails_$300_memory_ptr",
+                            "typeString": "struct Court.courtDetails memory"
+                          }
+                        },
+                        "id": 357,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "court_type",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 295,
+                        "src": "897:13:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_courtType_$279",
+                          "typeString": "enum Court.courtType"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 358,
+                          "name": "cd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 347,
+                          "src": "911:2:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_courtDetails_$300_memory_ptr",
+                            "typeString": "struct Court.courtDetails memory"
+                          }
+                        },
+                        "id": 359,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "court_hierarchi",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 297,
+                        "src": "911:18:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_enum$_hierarchi_$289",
+                          "typeString": "enum Court.hierarchi"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 360,
+                          "name": "cd",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 347,
+                          "src": "930:2:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_courtDetails_$300_memory_ptr",
+                            "typeString": "struct Court.courtDetails memory"
+                          }
+                        },
+                        "id": 361,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "judgeName",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 299,
+                        "src": "930:12:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_memory",
+                          "typeString": "string memory"
+                        }
+                      }
+                    ],
+                    "id": 362,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "877:66:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_uint256_$_t_string_memory_$_t_enum$_courtType_$279_$_t_enum$_hierarchi_$289_$_t_string_memory_$",
+                      "typeString": "tuple(uint256,string memory,enum Court.courtType,enum Court.hierarchi,string memory)"
+                    }
+                  },
+                  "functionReturnParameters": 345,
+                  "id": 363,
+                  "nodeType": "Return",
+                  "src": "870:73:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 365,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCourtDetails",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 334,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 333,
+                  "name": "_number",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 365,
+                  "src": "722:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 332,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "722:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "721:14:2"
+            },
+            "returnParameters": {
+              "id": 345,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 336,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 365,
+                  "src": "755:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 335,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "755:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 338,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 365,
+                  "src": "760:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 337,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "760:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 340,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 365,
+                  "src": "774:9:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_courtType_$279",
+                    "typeString": "enum Court.courtType"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 339,
+                    "name": "courtType",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 279,
+                    "src": "774:9:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_courtType_$279",
+                      "typeString": "enum Court.courtType"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 342,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 365,
+                  "src": "784:9:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_hierarchi_$289",
+                    "typeString": "enum Court.hierarchi"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 341,
+                    "name": "hierarchi",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 289,
+                    "src": "784:9:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_hierarchi_$289",
+                      "typeString": "enum Court.hierarchi"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 344,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 365,
+                  "src": "794:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 343,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "794:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "754:54:2"
+            },
+            "scope": 366,
+            "src": "697:253:2",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 367,
+        "src": "25:927:2"
+      }
+    ],
+    "src": "0:952:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.1+commit.c8a2cb62.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.9",
+  "updatedAt": "2019-05-29T11:41:11.860Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
