@@ -83,22 +83,22 @@ router.post("/register",authCheck,async function(req,res,next){
 
 //to add a police station.
 router.get("/browse",authCheck,function(req,res){
-    caseData = new Array();
-    caseData.push(CaseReg.methods.civilianNumber().call({from:req.session.userAddr}))
-    caseData.push(CaseReg.methods.courtId().call({from:req.session.userAddr}))
-    caseData.push(CaseReg.methods.officerId().call({from:req.session.userAddr}))
-    caseData.push(CaseReg.methods.caseNo().call({from:req.session.caseNo}))
+    caseArr = new Array();
+    caseArr.push(CaseReg.methods.civilianNumber().call({from:req.session.userAddr}))
+    caseArr.push(CaseReg.methods.courtId().call({from:req.session.userAddr}))
+    caseArr.push(CaseReg.methods.officerId().call({from:req.session.userAddr}))
+    caseArr.push(CaseReg.methods.caseNo().call({from:req.session.caseNo}))
 
-    Promise.all(caseData).then((values)=>{
+    Promise.all(caseArr).then((values)=>{
         civilianCount = parseInt(web3.utils.toBN(values[0]).toString())
         courtCount = parseInt(web3.utils.toBN(values[1]).toString())
         officerCount = parseInt(web3.utils.toBN(values[2]).toString())
         caseCount = parseInt(web3.utils.toBN(values[3]).toString())
         
-        civilianData = new Array();
-        courtData = new Array();
-        officerData = new Array();
-        caseData = new Array();
+        let civilianData = new Array();
+        let courtData = new Array();
+        let officerData = new Array();
+        let caseData = new Array();
 
         for(let i=0;i<civilianCount;i++){
             civilianData.push(CaseReg.methods.getCivilian(i).call({from:req.session.userAddr,gas:6000000}));
@@ -134,19 +134,24 @@ router.get("/browse",authCheck,function(req,res){
 
 //to add a police station.
 router.get("/caseDetails/:id",authCheck,function(req,res){
-    caseData = new Array();
-    caseData.push(CaseReg.methods.civilianNumber().call({from:req.session.userAddr}))
-    caseData.push(CaseReg.methods.courtId().call({from:req.session.userAddr}))
-    caseData.push(CaseReg.methods.officerId().call({from:req.session.userAddr}))
+    caseArr = new Array();
+    caseArr.push(CaseReg.methods.civilianNumber().call({from:req.session.userAddr}))
+    caseArr.push(CaseReg.methods.courtId().call({from:req.session.userAddr}))
+    caseArr.push(CaseReg.methods.officerId().call({from:req.session.userAddr}))
+    caseArr.push(CaseReg.methods.pageNumber().call({from:req.session.userAddr}))
 
-    Promise.all(caseData).then((values)=>{
+    Promise.all(caseArr).then((values)=>{
         civilianCount = parseInt(web3.utils.toBN(values[0]).toString())
         courtCount = parseInt(web3.utils.toBN(values[1]).toString())
         officerCount = parseInt(web3.utils.toBN(values[2]).toString())
+        filePagesCount = parseInt(web3.utils.toBN(values[3]).toString())
+        
         
         civilianData = new Array();
         courtData = new Array();
         officerData = new Array();
+        caseData = new Array();
+        caseFileData = new Array();
 
         for(let i=0;i<civilianCount;i++){
             civilianData.push(CaseReg.methods.getCivilian(i).call({from:req.session.userAddr,gas:6000000}));
@@ -157,6 +162,9 @@ router.get("/caseDetails/:id",authCheck,function(req,res){
         for(let i=0;i<officerCount;i++){
             officerData.push(CaseReg.methods.getOficerDetails(i).call({from:req.session.userAddr,gas:6000000}));
         }
+        for(let i=0;i<filePagesCount;i++){
+            caseFileData.push(CaseReg.methods.getCaseFilePage(i).call({from:req.session.userAddr,gas:6000000}));
+        }
 
         caseData.push(CaseReg.methods.getCaseDetails(req.params.id).call({from:req.session.userAddr,gas:6000000}));
 
@@ -164,8 +172,19 @@ router.get("/caseDetails/:id",authCheck,function(req,res){
             Promise.all(courtData).then(result1=>{
                 Promise.all(officerData).then(result2=>{
                     Promise.all(caseData).then(result3=>{
-                        res.render("caseDetails",{civilianData:result,courtData:result1,officerData:result2,caseData:result3} );
-                    })                })
+                        Promise.all(caseFileData).then(result4=>{
+                            console.log(result4.toString());
+                            caseFileArr = new Array();
+                            for(let i=0;i<filePagesCount;i++){
+                                if(result4[i][1]==result3[0][4]){
+                                    caseFileArr.push(result4[i]);
+                                }
+                            }
+                            
+                            res.render("caseDetails",{civilianData:result,courtData:result1,officerData:result2,caseData:result3,caseFileArr:caseFileArr} );
+                        })                
+                    })               
+                })
             })
         })
     }).catch(err=>{
@@ -175,6 +194,24 @@ router.get("/caseDetails/:id",authCheck,function(req,res){
     })
         
         
+})
+
+
+router.get("/attach/:fileNo",authCheck,function(req,res){
+    res.render("attachFile");
+})
+
+//this function will add a new account with given password adn enter an entity in policestation Contract
+router.post("/add-civilian",authCheck,async function(req,res,next){
+    //console.log(req.body);
+    if(req.body.name!=""&& req.body.idNo!=""&& req.body.age!=""){
+        CaseReg.methods.addCivilian(req.body.name,req.body.idType,req.body.idNo,req.body.age,"").send({from:req.session.userAddr,gas:6000000}).then((data)=>{
+            console.log("setCivilian method Completed"+data);
+        }).catch((err)=>{
+            console.log("setCivilian !!!!ERROR!!! :"+err);
+        })
+        res.redirect("/?pa=success");
+    }
 })
 
 module.exports = router;
