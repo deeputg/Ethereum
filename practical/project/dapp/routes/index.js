@@ -13,7 +13,18 @@ authCheck = function(req,res,next){
 /* GET home page. */
 router.get('/',authCheck, function(req, res, next) {
   data= {};
+  msg={};
 
+  if(req.query.stat){
+    if(req.query.stat=="success"){
+      msg.msg = "Operation Success";
+      msg.class = "alert alert-success"
+    }
+    else{
+      msg.msg = "Operation Failed";
+      msg.class = "alert alert-danger"
+    }
+  }
   /* 
   Checking if the contract balance is less than 200 and if yes , transwering 1000 ether from the coinbase to the contract
   */

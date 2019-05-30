@@ -1,0 +1,42 @@
+<div class="container tm-mt-big tm-mb-big">
+        <div class="row">
+          <div class="col-xl-9 col-lg-10 col-md-12 col-sm-12 mx-auto">
+            <div class="tm-bg-primary-dark tm-block tm-block-h-auto">
+              
+                <div class="row">
+                
+                <div class="col-12">
+                        <%=caseData%>
+                  <h2 class="tm-block-title d-inline-block">Case Details : <%=caseData[0][1]%></h2>
+                </div>
+              </div>
+
+              <div class="row tm-edit-product-row">
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                    
+                    <div class="mb-3">
+                        <label for="name" >Category </label>
+                        <div class="box"><%=caseCatogory[caseData[0][2]]%></div>
+                    </div>
+                    <div class="mb-3">
+                            <label for="name" >Investigating Officer </label>
+                            <div class="box"><%=officerData[caseData[0][8]][1]%></div>
+                        </div>
+                    <div class="mb-3">
+                            <label for="name" >Court </label>
+                            <div class="box"><%=courtData[caseData[0][7]][1] %></div>
+                        </div>
+                        
+                    <div class="mb-3">
+                        <label for="name" >FIR </label>
+                        <div class="box bigbox"><%=caseData[0][1]%></div>
+                    </div>
+                   
+                   
+                    
+                </div>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>

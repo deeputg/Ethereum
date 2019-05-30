@@ -4,7 +4,11 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/',function(req,res){
-  res.render("login",{title: 'Login page',accounts:accList });
+  web3.eth.getAccounts().then(accounts=>{
+    var accListlog=accounts;
+    res.render("login",{layout:"layout-login",title: 'Login page',accounts:accListlog });
+  });
+  
 })
 
 router.post('/',function(req,res){

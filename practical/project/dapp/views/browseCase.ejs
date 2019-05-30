@@ -1,0 +1,43 @@
+<div class="row tm-content-row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 tm-block-col">
+          <div class="tm-bg-primary-dark tm-block tm-block-products">
+
+
+               
+<div class="tm-product-table-container">
+        <table class="table table-hover tm-table-small tm-product-table">
+          <thead>
+            <tr>
+              <th scope="col">CASE N0 </th>
+              <th scope="col">CASE TITLE</th>
+              <th scope="col">CATEGORY</th>
+              <th scope="col">OFFICER IINVESTIGATING</th>
+              <th scope="col">COURT</th>
+              <th scope="col">&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for(i=0;i<caseData.length;i++){%>
+                    <option value="<%=i%>"></option>
+                    <tr>
+                            <th scope="row"><%=caseData[i][0]%></th>
+                            <td class="tm-product-name"><a href="/case/caseDetails/<%=caseData[i][0]%>"><%=caseData[i][1]%></a></td>
+                            <td><%=caseCatogory[caseData[i][2]]%></td>
+                            <td><%=officerData[caseData[i][8]][1]%></td>
+                            <td><%=courtData[caseData[i][7]][1] %></td>
+                            <td>
+                              <a href="#" class="tm-product-delete-link">
+                                <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                              </a>
+                            </td>
+                          </tr>
+                <% }%>
+            
+            
+          </tbody>
+        </table>
+      </div>
+
+      </div>
+      </div>
+      </div>

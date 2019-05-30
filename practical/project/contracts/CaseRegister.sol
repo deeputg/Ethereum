@@ -3,13 +3,24 @@ pragma solidity ^0.5.0;
 import "./PoliceStation.sol";
 import "./Civilians.sol";
 import "./Court.sol";
+import "./CaseFile.sol";
 
-contract CaseRegister is PoliceStation,Civilians,Court{
+
+
+contract CaseRegister is PoliceStation,Civilians,Court,CaseFile{
+    
+    constructor() public {
+    addCourt("Judicial First Class Court - Alappuzha",courtType(1),hierarchi(2),"Jameela");
+    addCivilian("Deepu",idType(1),"123",25,"");
+    addCivilian("Saji",idType(1),"126",25,"");
+    addCivilian("Stanly",idType(1),"124",25,"");
+    addCivilian("Rameshan",idType(1),"125",25,"");
+    setOfficer("Bharath Chandran",ranks(5));
+    }
     
     enum CaseStatus {active,inactive}
     enum CaseCategory {criminal,petty,civil}
     uint public caseNo = 0;
-    uint public caseFileNo =0;
     struct caseDetails{
         uint caseNo;
         string caseName;
@@ -34,9 +45,9 @@ contract CaseRegister is PoliceStation,Civilians,Court{
         caseFileNo++;
     }
     
-    function getCaseDetails(uint _caseNo) public view returns(uint,string memory,CaseCategory,string memory,uint,uint[] memory,uint,CaseStatus){
+    function getCaseDetails(uint _caseNo) public view returns(uint,string memory,CaseCategory,string memory,uint,uint[] memory,uint[] memory,uint,uint,CaseStatus){
         caseDetails memory cd = caseReg[_caseNo];
-        return (cd.caseNo,cd.caseName,cd.caseCategory,cd.FIR,cd.caseFileNo,cd.petitioners,cd.courtId,cd.status);
+        return (cd.caseNo,cd.caseName,cd.caseCategory,cd.FIR,cd.caseFileNo,cd.petitioners,cd.accused,cd.courtId,cd.officerId,cd.status);
     }
     
     function allocateCoins() public payable returns(bool){

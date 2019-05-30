@@ -1,32 +1,58 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <div style="float: right"><a href="/logout">Logout</a></div>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-<div style="float: left;">
-  <%if(data.superAdminPanel){%>
-    <p><a href="policestation/add">Add police Station</a></p>
-
+<%if(typeof msg !== 'undefined'){%>
+  <div class="row"><div class="<%=msg.class%>"><%=msg.msg%></div></div>
   <% }%>
-    <p><a href="policestation/add-court">Add Court</a></p>
-    <p><a href="public/add-civilian">Add a Civilian</a></p>
-    
-    <p><a href="policestation/add-officer">Add an Invnestigatio  Oficer</a></p>
-</div>
-<div style="float: right;">
-    <p><a href="case/register">Register a Case</a></p>
-    <p><a href="case/add-caseFile">Assign a caseFile</a></p>
-    <p><a href="case/register">View Case</a></p>
-    <p><a href="case/register">view Criminal History</a></p>
-
+<div class="row">
+ 
     
 
+    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-block-col">
+        <div class="tm-bg-primary-dark tm-block tm-block-product-categories">
+          
+          <div class="tm-product-table-container">
+            <table class="table tm-table-small tm-product-table">
+              <tbody>
+                <%if(data.superAdminPanel){%>
+                <tr>
+                   <td><a href="policestation/add">Add police Station</a></td>
+                </tr>
+                <% }%>
+                <tr>
+                  <td><a href="policestation/add-court">Add Court</a></td>
+                  </tr>
+                <tr>
+                  <td><a href="public/add-civilian">Add a Civilian</a></td>
+                </tr>
+                  <tr>
+                  <td><a href="policestation/add-officer">Add an Invnestigatio  Oficer</a></td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-block-col">
+        <div class="tm-bg-primary-dark tm-block tm-block-product-categories">
+          <!-- <h2 class="tm-block-title">Product Categories</h2> -->
+          <div class="tm-product-table-container">
+            <table class="table tm-table-small tm-product-table">
+              <tbody>
+                <tr>
+                  <td class="tm-product-name"><a href="case/register">Register a Case</a></td>
+                </tr>
+                <tr>
+                  <td class="tm-product-name"><a href="case/add-caseFile">Assign a caseFile</a></td>
+                </tr>
+                <tr>
+                  <td class="tm-product-name"><a href="case/browse">View Case</a></td>
+                </tr>
+                <tr>
+                  <td class="tm-product-name"><a href="case/register">view Criminal History</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
 </div>
 
-  </body>
-</html>
